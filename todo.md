@@ -108,3 +108,6 @@
 - [x] Generate/find split-screen comparison image (daylight vs thermal)
 - [x] Generate/find photo of pilot with drone
 - [x] Create drone silhouette graphics
+
+## Updates and Changes
+- [x] Reduce all pricing by half (Title Sponsor $5000→$2500, Founding Partner $2000→$1000, Founding Supporter $500→$250, Equipment cost $10000→$5000, Call-out fee $200→$100, Cost without support $800-1200→$400-600)

@@ -167,7 +167,7 @@ export default function Home() {
             This isn't a better way to search. It's physics working FOR families instead of against them.
           </p>
           <p className="text-lg leading-relaxed mb-10">
-            DroneSearch.ca will bring this capability to Vernon, Armstrong, Salmon Arm, and surrounding communities—with an affordable $200 call-out fee thanks to community sponsorship.
+            DroneSearch.ca will bring this capability to Vernon, Armstrong, Salmon Arm, and surrounding communities—with an affordable $100 call-out fee thanks to community sponsorship.
           </p>
 
           <div className="bg-[#00FFC2] text-[#1E1E1E] rounded-lg p-8">
@@ -199,12 +199,12 @@ export default function Home() {
           <div className="text-lg leading-relaxed space-y-6">
             <p className="font-semibold">Here's the reality:</p>
             <div className="bg-gray-50 rounded-lg p-8 my-8">
-              <p className="text-xl mb-2">Professional thermal imaging equipment: <span className="font-bold">$10,000</span></p>
-              <p className="text-xl mb-2">Cost per search without community support: <span className="font-bold">$800-1,200</span></p>
-              <p className="text-xl">With founding sponsor support: <span className="font-bold text-[#FF6200]">$200 call-out fee</span></p>
+              <p className="text-xl mb-2">Professional thermal imaging equipment: <span className="font-bold">$5,000</span></p>
+              <p className="text-xl mb-2">Cost per search without community support: <span className="font-bold">$400-600</span></p>
+              <p className="text-xl">With founding sponsor support: <span className="font-bold text-[#FF6200]">$100 call-out fee</span></p>
             </div>
             <p>
-              The families who need this service most—whose senior dog wandered off, whose indoor cat escaped during a move, whose family pet is lost in unfamiliar terrain—can afford $200. They cannot afford $1,000.
+              The families who need this service most—whose senior dog wandered off, whose indoor cat escaped during a move, whose family pet is lost in unfamiliar terrain—can afford $100. They cannot afford $500.
             </p>
             <p className="font-semibold text-xl">This is where founding sponsors change the equation.</p>
             <p>
@@ -268,7 +268,7 @@ export default function Home() {
                 </span>
               </div>
               <h3 className="text-3xl mb-3">Title Sponsor</h3>
-              <p className="text-4xl font-bold text-[#0B2D59] mb-4">$5,000 one-time</p>
+              <p className="text-4xl font-bold text-[#0B2D59] mb-4">$2,500 one-time</p>
               <p className="text-gray-600 mb-6 italic">
                 For: The business leader who doesn't just support—they LEAD. You want your brand synonymous with pet rescue in the North Okanagan.
               </p>
@@ -307,7 +307,7 @@ export default function Home() {
                 </div>
               </div>
               <p className="text-sm italic text-gray-600">
-                Most businesses spend $5,000 on a single trade show forgotten in 60 days. This is permanent positioning as the company that brought hope to pet owners.
+                Most businesses spend $2,500 on a single trade show forgotten in 60 days. This is permanent positioning as the company that brought hope to pet owners.
               </p>
             </div>
 
@@ -319,7 +319,7 @@ export default function Home() {
                 </span>
               </div>
               <h3 className="text-3xl mb-3">Founding Partner</h3>
-              <p className="text-4xl font-bold text-[#0B2D59] mb-4">$2,000 one-time</p>
+              <p className="text-4xl font-bold text-[#0B2D59] mb-4">$1,000 one-time</p>
               <p className="text-gray-600 mb-6 italic">
                 For: Business owners who understand community goodwill is built, not bought. You want lasting recognition without dominating the spotlight.
               </p>
@@ -354,7 +354,7 @@ export default function Home() {
                 </div>
               </div>
               <p className="text-sm italic text-gray-600">
-                $2,000 is less than three months of outdoor advertising. This is permanent, cumulative recognition.
+                $1,000 is less than two months of outdoor advertising. This is permanent, cumulative recognition.
               </p>
             </div>
 
@@ -366,7 +366,7 @@ export default function Home() {
                 </span>
               </div>
               <h3 className="text-3xl mb-3">Founding Supporter</h3>
-              <p className="text-4xl font-bold text-[#0B2D59] mb-4">$500 one-time</p>
+              <p className="text-4xl font-bold text-[#0B2D59] mb-4">$250 one-time</p>
               <p className="text-gray-600 mb-6 italic">
                 For: Business owners and individuals who want to be part of something bigger. You want to know you made a difference.
               </p>
@@ -389,7 +389,7 @@ export default function Home() {
                 </div>
               </div>
               <p className="text-sm italic text-gray-600">
-                $500. The price of a weekend getaway. The difference between "I wish I had" and "I was part of making that happen."
+                $250. The price of a nice dinner out. The difference between "I wish I had" and "I was part of making that happen."
               </p>
             </div>
           </div>
@@ -552,7 +552,7 @@ export default function Home() {
                 Everyone else would keep doing what they've always done: hoping, walking, calling, and usually never finding their pet.
               </p>
               <p className="text-lg leading-relaxed mt-4">
-                Sponsors make it possible to offer searches at $200—a price families can actually afford in crisis. That's the difference between "elite service for a few" and "community resource for everyone."
+                Sponsors make it possible to offer searches at $100—a price families can actually afford in crisis. That's the difference between "elite service for a few" and "community resource for everyone."
               </p>
             </div>
 
@@ -583,7 +583,7 @@ export default function Home() {
           <div className="mb-8">
             <div className="flex justify-between mb-2">
               <span className="text-lg font-semibold">$0 raised</span>
-              <span className="text-lg font-semibold">$10,000 goal</span>
+              <span className="text-lg font-semibold">$5,000 goal</span>
             </div>
             <div className="w-full bg-gray-200 rounded-full h-8 overflow-hidden">
               <div 
@@ -628,11 +628,11 @@ export default function Home() {
                   When I learned thermal imaging had reached a point where lost pet detection was not only possible but RELIABLE, I realized this is the solution I'd been looking for.
                 </p>
                 <p>
-                  But I also realized: I can't just buy equipment and charge $1,000 per search. That would make this EXIST, but it wouldn't make it ACCESSIBLE.
+                  But I also realized: I can't just buy equipment and charge $500 per search. That would make this EXIST, but it wouldn't make it ACCESSIBLE.
                 </p>
                 <p className="font-semibold">So the real question became: How do we make this accessible to everyone?</p>
                 <p>
-                  That's where founding sponsors come in. You make it possible to offer this at $200—a price that works for real families in crisis, not just wealthy pet owners.
+                  That's where founding sponsors come in. You make it possible to offer this at $100—a price that works for real families in crisis, not just wealthy pet owners.
                 </p>
                 <p>
                   This isn't me asking you to fund my business. This is me inviting you to step into a leadership role in making sure North Okanagan families have access to hope when they need it most.
