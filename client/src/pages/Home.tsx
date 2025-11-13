@@ -583,6 +583,13 @@ export default function Home() {
                 A: DroneSearch.ca operates as a regular business, not a registered charity, so sponsorships are not tax-deductible donations. However, they are legitimate marketing expenses for businesses (consult your accountant).
               </p>
             </div>
+
+            <div>
+              <h3 className="text-xl font-bold mb-3 text-[#0B2D59]">Q: Is this an emergency service?</h3>
+              <p className="text-lg leading-relaxed">
+                A: No. DroneSearch.ca is a non-emergency service for lost pet recovery. For life-threatening emergencies or human search and rescue, always contact Vernon Search and Rescue or emergency services immediately. We focus on helping families find their missing pets in non-emergency situations.
+              </p>
+            </div>
           </div>
         </div>
       </section>

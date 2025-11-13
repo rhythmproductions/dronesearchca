@@ -133,3 +133,4 @@
 - [x] Change "Featured in all media coverage" to "Featured in social media posts"
 - [x] Add "by Rhythm Productions" with values to Founding Partner video benefits ($1,000 for Standard, $2,000 for Premium)
 - [x] Add clarification that this is non-emergency service (Vernon Search and Rescue handles emergencies)
+- [x] Add non-emergency service clarification as FAQ question
