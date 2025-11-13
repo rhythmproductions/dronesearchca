@@ -121,3 +121,9 @@
 - [x] Change Founding Partner "launch lawn sign" to sandwich board at search locations
 - [x] Remove Founding Supporter tier completely
 - [x] Update funding goal progress bar to $7,000 (1 Title Sponsor $2,000 + 10 Founding Partners $500 each)
+- [x] Update Title Sponsor price to $4,500
+- [x] Update Title Sponsor benefits (equipment lifetime naming rights, on-site showcase event, 3-month video training program)
+- [x] Split Founding Partner into two packages: Standard $750 and Premium $1,000
+- [x] Update Founding Partner benefits for both packages
+- [x] Update call-out fee from $149 to $199 throughout site
+- [x] Update funding goal to $12,000 (equipment cost)
