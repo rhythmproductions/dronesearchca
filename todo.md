@@ -111,3 +111,13 @@
 
 ## Updates and Changes
 - [x] Reduce all pricing by half (Title Sponsor $5000→$2500, Founding Partner $2000→$1000, Founding Supporter $500→$250, Equipment cost $10000→$5000, Call-out fee $200→$100, Cost without support $800-1200→$400-600)
+- [x] Add video banner space under hero CTA button (1080 resolution)
+- [x] Update equipment cost to $12,000
+- [x] Update cost without support to $600-1,200
+- [x] Update call-out fee to $149 throughout site
+- [x] Revise Title Sponsor benefits (new structure, 1 year duration, remove category exclusivity, update social media mention)
+- [x] Update Title Sponsor price to $2,000
+- [x] Update Founding Partner price to $500 (10 spots)
+- [x] Change Founding Partner "launch lawn sign" to sandwich board at search locations
+- [x] Remove Founding Supporter tier completely
+- [x] Update funding goal progress bar to $7,000 (1 Title Sponsor $2,000 + 10 Founding Partners $500 each)

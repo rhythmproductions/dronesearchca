@@ -92,6 +92,20 @@ export default function Home() {
           >
             See Founding Opportunities →
           </Button>
+          
+          {/* Video Banner */}
+          <div className="mt-12 max-w-4xl mx-auto">
+            <div className="relative w-full" style={{ paddingBottom: '56.25%' }}>
+              <video 
+                className="absolute top-0 left-0 w-full h-full rounded-lg shadow-2xl"
+                controls
+                poster="/video-thumbnail.jpg"
+              >
+                <source src="/banner-video.mp4" type="video/mp4" />
+                Your browser does not support the video tag.
+              </video>
+            </div>
+          </div>
         </div>
       </section>
 
@@ -167,7 +181,7 @@ export default function Home() {
             This isn't a better way to search. It's physics working FOR families instead of against them.
           </p>
           <p className="text-lg leading-relaxed mb-10">
-            DroneSearch.ca will bring this capability to Vernon, Armstrong, Salmon Arm, and surrounding communities—with an affordable $100 call-out fee thanks to community sponsorship.
+            DroneSearch.ca will bring this capability to Vernon, Armstrong, Salmon Arm, and surrounding communities—with an affordable $149 call-out fee thanks to community sponsorship.
           </p>
 
           <div className="bg-[#00FFC2] text-[#1E1E1E] rounded-lg p-8">
@@ -199,12 +213,12 @@ export default function Home() {
           <div className="text-lg leading-relaxed space-y-6">
             <p className="font-semibold">Here's the reality:</p>
             <div className="bg-gray-50 rounded-lg p-8 my-8">
-              <p className="text-xl mb-2">Professional thermal imaging equipment: <span className="font-bold">$5,000</span></p>
-              <p className="text-xl mb-2">Cost per search without community support: <span className="font-bold">$400-600</span></p>
-              <p className="text-xl">With founding sponsor support: <span className="font-bold text-[#FF6200]">$100 call-out fee</span></p>
+              <p className="text-xl mb-2">Professional thermal imaging equipment: <span className="font-bold">$12,000</span></p>
+              <p className="text-xl mb-2">Cost per search without community support: <span className="font-bold">$600-1,200</span></p>
+              <p className="text-xl">With founding sponsor support: <span className="font-bold text-[#FF6200]">$149 call-out fee</span></p>
             </div>
             <p>
-              The families who need this service most—whose senior dog wandered off, whose indoor cat escaped during a move, whose family pet is lost in unfamiliar terrain—can afford $100. They cannot afford $500.
+              The families who need this service most—whose senior dog wandered off, whose indoor cat escaped during a move, whose family pet is lost in unfamiliar terrain—can afford $149. They cannot afford $600.
             </p>
             <p className="font-semibold text-xl">This is where founding sponsors change the equation.</p>
             <p>
@@ -253,7 +267,7 @@ export default function Home() {
             Founding Sponsor Opportunities
           </h2>
           <p className="text-xl text-center mb-4 max-w-4xl mx-auto">
-            Three ways to secure permanent recognition as a community leader who made this possible. Limited spots available—your support launches this service.
+            Two ways to secure permanent recognition as a community leader who made this possible. Limited spots available—your support launches this service.
           </p>
           <p className="text-center mb-12 text-gray-600 max-w-3xl mx-auto">
             Founding Sponsorships are one-time investments with permanent recognition. You'll be remembered as someone who made thermal pet rescue accessible in our region.
@@ -268,46 +282,39 @@ export default function Home() {
                 </span>
               </div>
               <h3 className="text-3xl mb-3">Title Sponsor</h3>
-              <p className="text-4xl font-bold text-[#0B2D59] mb-4">$2,500 one-time</p>
+              <p className="text-4xl font-bold text-[#0B2D59] mb-4">$2,000 one-time</p>
               <p className="text-gray-600 mb-6 italic">
                 For: The business leader who doesn't just support—they LEAD. You want your brand synonymous with pet rescue in the North Okanagan.
               </p>
+              <p className="text-sm font-semibold text-gray-700 mb-4">Title Sponsor Benefits (Different from Founding Partners):</p>
               <div className="space-y-3 mb-6">
                 <div className="flex items-start">
                   <Check className="text-[#00FFC2] mr-3 mt-1 flex-shrink-0" />
-                  <span>Your business name ON the drone for 2 years (exclusive naming rights)</span>
+                  <span>Exclusive drone naming rights - "Searches powered by [Business]" for 1 year (until new drone in 2027)</span>
                 </div>
                 <div className="flex items-start">
                   <Check className="text-[#00FFC2] mr-3 mt-1 flex-shrink-0" />
-                  <span>Large logo on drone top—visible in all flight footage and photos</span>
+                  <span>Largest logo on drone (physical branding)</span>
                 </div>
                 <div className="flex items-start">
                   <Check className="text-[#00FFC2] mr-3 mt-1 flex-shrink-0" />
-                  <span>In the event of drone replacement within 2 years, name and logo decal transfer to new drone</span>
+                  <span>Homepage hero placement on website</span>
                 </div>
                 <div className="flex items-start">
                   <Check className="text-[#00FFC2] mr-3 mt-1 flex-shrink-0" />
-                  <span>At 2-year mark, first right of refusal for new drone naming rights</span>
+                  <span>Premium video package included (90-120 sec)</span>
                 </div>
                 <div className="flex items-start">
                   <Check className="text-[#00FFC2] mr-3 mt-1 flex-shrink-0" />
-                  <span>Featured in 60-70% of all social media content</span>
+                  <span>Tagged in any posts made involving the drone</span>
                 </div>
                 <div className="flex items-start">
                   <Check className="text-[#00FFC2] mr-3 mt-1 flex-shrink-0" />
-                  <span>Professional 60-second hero video showcasing your business</span>
-                </div>
-                <div className="flex items-start">
-                  <Check className="text-[#00FFC2] mr-3 mt-1 flex-shrink-0" />
-                  <span>Category exclusivity—your industry protected from other sponsors</span>
-                </div>
-                <div className="flex items-start">
-                  <Check className="text-[#00FFC2] mr-3 mt-1 flex-shrink-0" />
-                  <span>"Title Sponsor" status in all press releases and media coverage</span>
+                  <span>Featured in all media coverage - "Made possible by..."</span>
                 </div>
               </div>
               <p className="text-sm italic text-gray-600">
-                Most businesses spend $2,500 on a single trade show forgotten in 60 days. This is permanent positioning as the company that brought hope to pet owners.
+                Most businesses spend $2,000 on a single trade show forgotten in 60 days. This is permanent positioning as the company that brought hope to pet owners.
               </p>
             </div>
 
@@ -315,11 +322,11 @@ export default function Home() {
             <div className="border-l-4 border-[#FF6200] bg-white shadow-lg rounded-lg p-8">
               <div className="mb-4">
                 <span className="inline-block bg-[#FF6200] text-white text-xs font-bold px-3 py-1 rounded uppercase tracking-wide">
-                  MAXIMUM 6 SPOTS
+                  MAXIMUM 10 SPOTS
                 </span>
               </div>
               <h3 className="text-3xl mb-3">Founding Partner</h3>
-              <p className="text-4xl font-bold text-[#0B2D59] mb-4">$1,000 one-time</p>
+              <p className="text-4xl font-bold text-[#0B2D59] mb-4">$500 one-time</p>
               <p className="text-gray-600 mb-6 italic">
                 For: Business owners who understand community goodwill is built, not bought. You want lasting recognition without dominating the spotlight.
               </p>
@@ -330,7 +337,7 @@ export default function Home() {
                 </div>
                 <div className="flex items-start">
                   <Check className="text-[#00FFC2] mr-3 mt-1 flex-shrink-0" />
-                  <span>Logo on launch lawn sign</span>
+                  <span>Logo on sandwich board displayed at all drone search locations</span>
                 </div>
                 <div className="flex items-start">
                   <Check className="text-[#00FFC2] mr-3 mt-1 flex-shrink-0" />
@@ -354,42 +361,7 @@ export default function Home() {
                 </div>
               </div>
               <p className="text-sm italic text-gray-600">
-                $1,000 is less than two months of outdoor advertising. This is permanent, cumulative recognition.
-              </p>
-            </div>
-
-            {/* Tier 3: Founding Supporter */}
-            <div className="border-l-4 border-[#FF6200] bg-white shadow-lg rounded-lg p-8">
-              <div className="mb-4">
-                <span className="inline-block bg-[#FF6200] text-white text-xs font-bold px-3 py-1 rounded uppercase tracking-wide">
-                  MAXIMUM 20 SPOTS
-                </span>
-              </div>
-              <h3 className="text-3xl mb-3">Founding Supporter</h3>
-              <p className="text-4xl font-bold text-[#0B2D59] mb-4">$250 one-time</p>
-              <p className="text-gray-600 mb-6 italic">
-                For: Business owners and individuals who want to be part of something bigger. You want to know you made a difference.
-              </p>
-              <div className="space-y-3 mb-6">
-                <div className="flex items-start">
-                  <Check className="text-[#00FFC2] mr-3 mt-1 flex-shrink-0" />
-                  <span>Name permanently listed in "Founding Supporters" section on website</span>
-                </div>
-                <div className="flex items-start">
-                  <Check className="text-[#00FFC2] mr-3 mt-1 flex-shrink-0" />
-                  <span>Included in monthly thank-you posts (12 times Year 1)</span>
-                </div>
-                <div className="flex items-start">
-                  <Check className="text-[#00FFC2] mr-3 mt-1 flex-shrink-0" />
-                  <span>Named in launch announcement</span>
-                </div>
-                <div className="flex items-start">
-                  <Check className="text-[#00FFC2] mr-3 mt-1 flex-shrink-0" />
-                  <span>Permanent "Founding Supporter" title if you join any monthly plan after Year 1</span>
-                </div>
-              </div>
-              <p className="text-sm italic text-gray-600">
-                $250. The price of a nice dinner out. The difference between "I wish I had" and "I was part of making that happen."
+                $500 is less than one month of outdoor advertising. This is permanent, cumulative recognition.
               </p>
             </div>
           </div>
@@ -530,36 +502,36 @@ export default function Home() {
           
           <div className="space-y-8">
             <div>
-              <h3 className="text-xl font-bold mb-3 text-[#0B2D59]">Q: What happens if you don't reach the $10,000 goal?</h3>
+              <h3 className="text-xl font-bold mb-3 text-[#0B2D59]">Q: What happens if you don't reach the $7,000 goal?</h3>
               <p className="text-lg leading-relaxed">
-                A: This is going to happen—the need is too real. But out of respect for your trust: no equipment will be purchased until $10,000 is secured. If there's any delay, you'll be contacted directly before any action is taken. Your contribution is held in trust until launch.
+                A: This is going to happen—the need is too real. But out of respect for your trust: no equipment will be purchased until $7,000 is secured. If there's any delay, you'll be contacted directly before any action is taken. Your contribution is held in trust until launch.
               </p>
             </div>
 
             <div>
               <h3 className="text-xl font-bold mb-3 text-[#0B2D59]">Q: What if equipment breaks or needs upgrading?</h3>
               <p className="text-lg leading-relaxed">
-                A: Your recognition isn't tied to one piece of hardware—it's tied to the SERVICE. Founding Partner plaques transfer to all future equipment. Title Sponsor: in the event of drone replacement within 2 years, your name and logo decal transfer to the new drone. At the 2-year mark, you get first right of refusal for new drone naming rights. The tool might change. The legacy doesn't.
+                A: Your recognition isn't tied to one piece of hardware—it's tied to the SERVICE. Founding Partner plaques transfer to all future equipment. Title Sponsor naming rights are for 1 year until the new drone in 2027. The tool might change. The legacy doesn't.
               </p>
             </div>
 
             <div>
               <h3 className="text-xl font-bold mb-3 text-[#0B2D59]">Q: Why not just charge clients more instead of needing sponsors?</h3>
               <p className="text-lg leading-relaxed mb-4">
-                A: We could charge $1,000+ per search and cover costs without sponsors. You know who would use that service? Wealthy pet owners who can afford premium pricing.
+                A: We could charge $600-1,200 per search and cover costs without sponsors. You know who would use that service? Wealthy pet owners who can afford premium pricing.
               </p>
               <p className="text-lg leading-relaxed">
                 Everyone else would keep doing what they've always done: hoping, walking, calling, and usually never finding their pet.
               </p>
               <p className="text-lg leading-relaxed mt-4">
-                Sponsors make it possible to offer searches at $100—a price families can actually afford in crisis. That's the difference between "elite service for a few" and "community resource for everyone."
+                Sponsors make it possible to offer searches at $149—a price families can actually afford in crisis. That's the difference between "elite service for a few" and "community resource for everyone."
               </p>
             </div>
 
             <div>
               <h3 className="text-xl font-bold mb-3 text-[#0B2D59]">Q: Can individuals (not businesses) be founding sponsors?</h3>
               <p className="text-lg leading-relaxed">
-                A: Absolutely. Individual sponsors are welcome in the Founding Supporter tier. No business required—just a desire to make this real.
+                A: Absolutely. Individual sponsors are welcome in the Founding Partner tier. No business required—just a desire to make this real.
               </p>
             </div>
 
@@ -583,7 +555,7 @@ export default function Home() {
           <div className="mb-8">
             <div className="flex justify-between mb-2">
               <span className="text-lg font-semibold">$0 raised</span>
-              <span className="text-lg font-semibold">$5,000 goal</span>
+              <span className="text-lg font-semibold">$7,000 goal</span>
             </div>
             <div className="w-full bg-gray-200 rounded-full h-8 overflow-hidden">
               <div 
@@ -628,11 +600,11 @@ export default function Home() {
                   When I learned thermal imaging had reached a point where lost pet detection was not only possible but RELIABLE, I realized this is the solution I'd been looking for.
                 </p>
                 <p>
-                  But I also realized: I can't just buy equipment and charge $500 per search. That would make this EXIST, but it wouldn't make it ACCESSIBLE.
+                  But I also realized: I can't just buy equipment and charge $600-1,200 per search. That would make this EXIST, but it wouldn't make it ACCESSIBLE.
                 </p>
                 <p className="font-semibold">So the real question became: How do we make this accessible to everyone?</p>
                 <p>
-                  That's where founding sponsors come in. You make it possible to offer this at $100—a price that works for real families in crisis, not just wealthy pet owners.
+                  That's where founding sponsors come in. You make it possible to offer this at $149—a price that works for real families in crisis, not just wealthy pet owners.
                 </p>
                 <p>
                   This isn't me asking you to fund my business. This is me inviting you to step into a leadership role in making sure North Okanagan families have access to hope when they need it most.
