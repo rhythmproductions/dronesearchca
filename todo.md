@@ -127,3 +127,9 @@
 - [x] Update Founding Partner benefits for both packages
 - [x] Update call-out fee from $149 to $199 throughout site
 - [x] Update funding goal to $12,000 (equipment cost)
+- [x] Change "Largest logo on drone" to "Large logo on drone"
+- [x] Remove "and media coverage" from on-site showcase event benefit
+- [x] Change video training value from $5,000-7,000 to $6,000
+- [x] Change "Featured in all media coverage" to "Featured in social media posts"
+- [x] Add "by Rhythm Productions" with values to Founding Partner video benefits ($1,000 for Standard, $2,000 for Premium)
+- [x] Add clarification that this is non-emergency service (Vernon Search and Rescue handles emergencies)

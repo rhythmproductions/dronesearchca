@@ -180,8 +180,11 @@ export default function Home() {
           <p className="text-lg leading-relaxed mb-10">
             This isn't a better way to search. It's physics working FOR families instead of against them.
           </p>
-          <p className="text-lg leading-relaxed mb-10">
+          <p className="text-lg leading-relaxed mb-6">
             DroneSearch.ca will bring this capability to Vernon, Armstrong, Salmon Arm, and surrounding communities—with an affordable $199 call-out fee thanks to community sponsorship.
+          </p>
+          <p className="text-base leading-relaxed mb-10 italic opacity-90">
+            <strong>Important:</strong> DroneSearch.ca is a non-emergency service for lost pet recovery. For life-threatening emergencies or human search and rescue, always contact Vernon Search and Rescue or emergency services immediately.
           </p>
 
           <div className="bg-[#00FFC2] text-[#1E1E1E] rounded-lg p-8">
@@ -294,7 +297,7 @@ export default function Home() {
                 </div>
                 <div className="flex items-start">
                   <Check className="text-[#00FFC2] mr-3 mt-1 flex-shrink-0" />
-                  <span>Largest logo on drone (physical branding on equipment)</span>
+                  <span>Large logo on drone (physical branding on equipment)</span>
                 </div>
                 <div className="flex items-start">
                   <Check className="text-[#00FFC2] mr-3 mt-1 flex-shrink-0" />
@@ -302,15 +305,15 @@ export default function Home() {
                 </div>
                 <div className="flex items-start">
                   <Check className="text-[#00FFC2] mr-3 mt-1 flex-shrink-0" />
-                  <span>On-site equipment showcase event at your location - We bring the thermal drone to your business for a customer appreciation event with live demonstrations, photo opportunities, and media coverage</span>
+                  <span>On-site equipment showcase event at your location - We bring the thermal drone to your business for a customer appreciation event with live demonstrations and photo opportunities</span>
                 </div>
                 <div className="flex items-start">
                   <Check className="text-[#00FFC2] mr-3 mt-1 flex-shrink-0" />
-                  <span>3-month video content training program for your staff - Monthly 90-minute sessions teaching your team to create professional social media content (mobile video, editing, strategy). Value: $5,000-7,000</span>
+                  <span>3-month video content training program for your staff - Monthly 90-minute sessions teaching your team to create professional social media content (mobile video, editing, strategy). Value: $6,000</span>
                 </div>
                 <div className="flex items-start">
                   <Check className="text-[#00FFC2] mr-3 mt-1 flex-shrink-0" />
-                  <span>Featured in all media coverage - "Made possible by..."</span>
+                  <span>Featured in social media posts - "Made possible by..."</span>
                 </div>
                 <div className="flex items-start">
                   <Check className="text-[#00FFC2] mr-3 mt-1 flex-shrink-0" />
@@ -342,7 +345,7 @@ export default function Home() {
                 <div className="space-y-2">
                   <div className="flex items-start">
                     <Check className="text-[#00FFC2] mr-3 mt-1 flex-shrink-0" />
-                    <span>Professional video business card (30-60 seconds) for your business</span>
+                    <span>Professional video business card (30-60 seconds) for your business by Rhythm Productions (a $1,000 value)</span>
                   </div>
                   <div className="flex items-start">
                     <Check className="text-[#00FFC2] mr-3 mt-1 flex-shrink-0" />
@@ -374,7 +377,7 @@ export default function Home() {
                 <div className="space-y-2">
                   <div className="flex items-start">
                     <Check className="text-[#00FFC2] mr-3 mt-1 flex-shrink-0" />
-                    <span>Full promotional video (90-120 seconds) for your business</span>
+                    <span>Full promotional video (90-120 seconds) for your business by Rhythm Productions (a $2,000 value)</span>
                   </div>
                   <div className="flex items-start">
                     <Check className="text-[#00FFC2] mr-3 mt-1 flex-shrink-0" />
