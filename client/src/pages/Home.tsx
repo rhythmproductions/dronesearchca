@@ -790,7 +790,7 @@ export default function Home() {
               <h3 className="text-xl font-bold mb-4">Service Area</h3>
               <div className="h-48 bg-gray-800 rounded-lg overflow-hidden">
                 <MapView
-                  initialCenter={{ lat: 50.52, lng: -119.35 }}
+                  initialCenter={{ lat: 50.48, lng: -119.28 }}
                   initialZoom={9}
                   onMapReady={(map) => {
                     // Armstrong, BC coordinates
