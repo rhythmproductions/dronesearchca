@@ -142,3 +142,11 @@
 - [x] Update funding goal progress bar to be easily updatable with percentage (change fundingPercentage variable at top of Home.tsx)
 - [x] Add visual size differentiation between Premium (large) and Standard (medium) logos
 - [x] Update funding goal note about opportunities closing
+
+## SEO Optimization Tasks
+- [x] Add meta title and description tags to index.html
+- [x] Add Schema markup (LocalBusiness JSON-LD) to index.html
+- [x] Ensure proper H1/H2 header hierarchy throughout page (H1: Help Launch North Okanagan's Thermal Drone Pet Search Service)
+- [x] Update all image alt text with location keywords (thermal comparison, pilot photo)
+- [x] Add optimized footer with NAP (Name, Address, Email) and location keywords
+- [ ] Compress and optimize all images (user can do this when replacing with real images)

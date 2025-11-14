@@ -82,7 +82,7 @@ export default function Home() {
         <div className="absolute inset-0 bg-gradient-to-b from-black/60 to-black/40" />
         <div className="relative z-10 container max-w-5xl text-center text-white px-6 py-20">
           <h1 className="text-5xl md:text-6xl lg:text-7xl mb-8 leading-tight">
-            The SPCA Estimates Over 1 Million Pets Go Missing Each Year in Canada
+            Help Launch North Okanagan's Thermal Drone Pet Search Service
           </h1>
           <p className="text-xl md:text-2xl mb-6 leading-relaxed max-w-4xl mx-auto">
             The problem isn't that people don't search hard enough. It's that they literally can't see what's hiding 10 feet away.
@@ -139,7 +139,7 @@ export default function Home() {
           <div className="bg-gray-50 rounded-lg overflow-hidden">
             <img 
               src="/thermal-comparison.jpg" 
-              alt="Comparison of daylight view vs thermal imaging view showing hidden animals"
+              alt="Thermal imaging technology for finding lost pets in North Okanagan BC - comparison showing hidden animals"
               className="w-full h-auto"
             />
             <p className="text-center text-sm text-gray-600 py-4 px-6 italic">
@@ -667,7 +667,7 @@ export default function Home() {
             <div>
               <img 
                 src="/pilot-with-drone.jpg" 
-                alt="Mike with thermal imaging drone"
+                alt="Transport Canada certified drone pilot serving North Okanagan pet search - Mike with thermal imaging drone"
                 className="w-full rounded-lg shadow-lg"
               />
             </div>
@@ -765,14 +765,20 @@ export default function Home() {
           <div className="grid md:grid-cols-3 gap-8 mb-8">
             <div>
               <h3 className="text-xl font-bold mb-4">DroneSearch.ca</h3>
+              <p className="text-gray-400 mb-2">
+                Thermal Drone Pet Search Service
+              </p>
+              <p className="text-gray-400 mb-2">
+                Serving North Okanagan: Vernon, Armstrong, Salmon Arm & Surrounding Areas
+              </p>
               <p className="text-gray-400">
-                Thermal imaging pet search service for the North Okanagan.
+                Email: <a href="mailto:info@dronesearch.ca" className="text-[#FF6200] hover:underline">info@dronesearch.ca</a>
               </p>
             </div>
             <div>
-              <h3 className="text-xl font-bold mb-4">Contact</h3>
+              <h3 className="text-xl font-bold mb-4">About</h3>
               <p className="text-gray-400">
-                Email: <a href="mailto:info@dronesearch.ca" className="text-[#FF6200] hover:underline">info@dronesearch.ca</a>
+                Launching North Okanagan's first thermal imaging pet search service. Founding sponsorship opportunities available for local businesses.
               </p>
             </div>
             <div>
@@ -811,7 +817,7 @@ export default function Home() {
           </div>
           
           <div className="border-t border-gray-700 pt-8 text-center text-gray-400 text-sm">
-            <p>&copy; 2024 DroneSearch.ca. All rights reserved.</p>
+            <p>&copy; 2025 DroneSearch.ca | Armstrong, British Columbia</p>
           </div>
         </div>
       </footer>
