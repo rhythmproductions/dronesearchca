@@ -159,3 +159,4 @@
 - [x] Change Standard Founding Partner price from $650 to $597
 - [x] Add video production timeline note (within 30 days of payment) to both Founding Partner tiers
 - [x] Fix Google Map centering to properly center on Armstrong (increased zoom to 9)
+- [x] Adjust Google Map to properly center on Armstrong BC with view including Lake Country (bottom) and Celista (top) - adjusted center to lat 50.52, lng -119.35

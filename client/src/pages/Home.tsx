@@ -790,15 +790,15 @@ export default function Home() {
               <h3 className="text-xl font-bold mb-4">Service Area</h3>
               <div className="h-48 bg-gray-800 rounded-lg overflow-hidden">
                 <MapView
-                  initialCenter={{ lat: 50.4489, lng: -119.1961 }}
+                  initialCenter={{ lat: 50.52, lng: -119.35 }}
                   initialZoom={9}
                   onMapReady={(map) => {
                     // Armstrong, BC coordinates
-                    const center = { lat: 50.4489, lng: -119.1961 };
+                    const armstrongCenter = { lat: 50.4489, lng: -119.1961 };
                     
                     // Add marker for Armstrong
                     new google.maps.marker.AdvancedMarkerElement({
-                      position: center,
+                      position: armstrongCenter,
                       map: map,
                       title: "Armstrong, BC"
                     });
@@ -811,7 +811,7 @@ export default function Home() {
                       fillColor: "#FF6200",
                       fillOpacity: 0.2,
                       map: map,
-                      center: center,
+                      center: armstrongCenter,
                       radius: 150000, // 150km in meters
                     });
                   }}
