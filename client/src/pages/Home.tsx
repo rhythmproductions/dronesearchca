@@ -186,7 +186,7 @@ export default function Home() {
             This isn't a better way to search. It's physics working FOR families instead of against them.
           </p>
           <p className="text-lg leading-relaxed mb-6">
-            DroneSearch.ca will bring this capability to Vernon, Armstrong, Salmon Arm, and surrounding communities—with an affordable $199 call-out fee thanks to community sponsorship.
+            DroneSearch.ca will bring this capability to Vernon, Armstrong, Salmon Arm, and surrounding communities—with an affordable call-out fee starting at $299 thanks to community sponsorship.
           </p>
           <p className="text-base leading-relaxed mb-10 italic opacity-90">
             <strong>Important:</strong> DroneSearch.ca is a non-emergency service for lost pet recovery. For life-threatening emergencies or human search and rescue, always contact Vernon Search and Rescue or emergency services immediately.
@@ -247,10 +247,10 @@ export default function Home() {
             <div className="bg-gray-50 rounded-lg p-8 my-8">
               <p className="text-xl mb-2">Professional thermal imaging equipment: <span className="font-bold">$12,000</span></p>
               <p className="text-xl mb-2">Cost per search without community support: <span className="font-bold">$600-1,200</span></p>
-              <p className="text-xl">With founding sponsor support: <span className="font-bold text-[#FF6200]">$199 call-out fee</span></p>
+              <p className="text-xl">With founding sponsor support: <span className="font-bold text-[#FF6200]">Starting at $299</span></p>
             </div>
             <p>
-              The families who need this service most—whose senior dog wandered off, whose indoor cat escaped during a move, whose family pet is lost in unfamiliar terrain—can afford $199. They cannot afford $600.
+              The families who need this service most—whose senior dog wandered off, whose indoor cat escaped during a move, whose family pet is lost in unfamiliar terrain—can afford $299. They cannot afford $600.
             </p>
             <p className="font-semibold text-xl">This is where founding sponsors change the equation.</p>
             <p>
@@ -467,7 +467,7 @@ export default function Home() {
               One call. Thermal drone in the air within the hour. Heat signature detected 200 meters into dense forest—motionless, hidden, but alive.
             </p>
             <p className="font-bold text-xl">
-              That reunion happens because you made the $199 call-out fee possible instead of $1,200.
+              That reunion happens because you made the affordable call-out fee possible instead of $1,200.
             </p>
             <p>
               This isn't theoretical. This is the difference founding sponsors make.
@@ -599,7 +599,7 @@ export default function Home() {
                 Everyone else would keep doing what they've always done: hoping, walking, calling, and usually never finding their pet.
               </p>
               <p className="text-lg leading-relaxed mt-4">
-                Sponsors make it possible to offer searches at $199—a price families can actually afford in crisis. That's the difference between "elite service for a few" and "community resource for everyone."
+                Sponsors make it possible to offer searches starting at $299—a price families can actually afford in crisis. That's the difference between "elite service for a few" and "community resource for everyone."
               </p>
             </div>
 
@@ -636,8 +636,8 @@ export default function Home() {
           
           <div className="mb-8">
             <div className="flex justify-between mb-2">
-              <span className="text-lg font-semibold">${fundingRaised.toLocaleString()} raised</span>
-              <span className="text-lg font-semibold">${fundingGoal.toLocaleString()} goal</span>
+              <span className="text-lg font-semibold">0% funded</span>
+              <span className="text-lg font-semibold">100% funded</span>
             </div>
             <div className="w-full bg-gray-200 rounded-full h-8 overflow-hidden">
               <div 
@@ -687,7 +687,7 @@ export default function Home() {
                 </p>
                 <p className="font-semibold">So the real question became: How do we make this accessible to everyone?</p>
                 <p>
-                  That's where founding sponsors come in. You make it possible to offer this at $199—a price that works for real families in crisis, not just wealthy pet owners.
+                  That's where founding sponsors come in. You make it possible to offer this starting at $299—a price that works for real families in crisis, not just wealthy pet owners.
                 </p>
                 <p>
                   This isn't me asking you to fund my business. This is me inviting you to step into a leadership role in making sure North Okanagan families have access to hope when they need it most.

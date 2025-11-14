@@ -150,3 +150,5 @@
 - [x] Update all image alt text with location keywords (thermal comparison, pilot photo)
 - [x] Add optimized footer with NAP (Name, Address, Email) and location keywords
 - [ ] Compress and optimize all images (user can do this when replacing with real images)
+- [x] Change call-out fee from $199 to "Starting at $299" throughout site (6 instances updated)
+- [x] Update progress bar labels from dollar amounts to percentages (0% funded / 100% funded)
