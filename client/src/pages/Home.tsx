@@ -282,7 +282,7 @@ export default function Home() {
                 </span>
               </div>
               <h3 className="text-3xl mb-3">Title Sponsor</h3>
-              <p className="text-4xl font-bold text-[#0B2D59] mb-4">$4,500 one-time</p>
+              <p className="text-4xl font-bold text-[#0B2D59] mb-4">$4,500 +GST one-time</p>
               <p className="text-gray-600 mb-6 italic">
                 For: The business leader who doesn't just support—they LEAD. You want your brand synonymous with pet rescue in the North Okanagan.
               </p>
@@ -326,7 +326,7 @@ export default function Home() {
                 </span>
               </div>
               <h3 className="text-3xl mb-3">Premium Founding Partner</h3>
-              <p className="text-4xl font-bold text-[#0B2D59] mb-4">$997 one-time</p>
+              <p className="text-4xl font-bold text-[#0B2D59] mb-4">$997 +GST one-time</p>
               <p className="text-gray-600 mb-6 italic">
                 6 spots available - Large logo display<br />
                 Video production within 30 days of payment based on our schedules
@@ -373,7 +373,7 @@ export default function Home() {
                 </span>
               </div>
               <h3 className="text-3xl mb-3">Standard Founding Partner</h3>
-              <p className="text-4xl font-bold text-[#0B2D59] mb-4">$597 one-time</p>
+              <p className="text-4xl font-bold text-[#0B2D59] mb-4">$597 +GST one-time</p>
               <p className="text-gray-600 mb-6 italic">
                 15 spots available - Medium logo display<br />
                 Video production within 30 days of payment based on our schedules
@@ -420,7 +420,7 @@ export default function Home() {
                 </span>
               </div>
               <h3 className="text-3xl mb-3">Launch Contributor</h3>
-              <p className="text-4xl font-bold text-[#0B2D59] mb-4">$50 one-time</p>
+              <p className="text-4xl font-bold text-[#0B2D59] mb-4">$50 +GST one-time</p>
               <p className="text-gray-600 mb-6 italic">
                 For: Small businesses, sole proprietors, and individuals who want to be part of the launch story.
               </p>
@@ -502,10 +502,10 @@ export default function Home() {
                   <SelectValue placeholder="Select a tier" />
                 </SelectTrigger>
                 <SelectContent>
-                  <SelectItem value="title">Title Sponsor - $4,500</SelectItem>
-                  <SelectItem value="premium">Premium Founding Partner - $997</SelectItem>
-                  <SelectItem value="standard">Standard Founding Partner - $597</SelectItem>
-                  <SelectItem value="contributor">Launch Contributor - $50</SelectItem>
+                  <SelectItem value="title">Title Sponsor - $4,500 +GST</SelectItem>
+                  <SelectItem value="premium">Premium Founding Partner - $997 +GST</SelectItem>
+                  <SelectItem value="standard">Standard Founding Partner - $597 +GST</SelectItem>
+                  <SelectItem value="contributor">Launch Contributor - $50 +GST</SelectItem>
                 </SelectContent>
               </Select>
             </div>
@@ -790,8 +790,8 @@ export default function Home() {
               <h3 className="text-xl font-bold mb-4">Service Area</h3>
               <div className="h-48 bg-gray-800 rounded-lg overflow-hidden">
                 <MapView
-                  initialCenter={{ lat: 50.48, lng: -119.28 }}
-                  initialZoom={9}
+                  initialCenter={{ lat: 50.4489, lng: -119.1961 }}
+                  initialZoom={10}
                   onMapReady={(map) => {
                     // Armstrong, BC coordinates
                     const armstrongCenter = { lat: 50.4489, lng: -119.1961 };
