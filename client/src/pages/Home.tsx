@@ -326,9 +326,13 @@ export default function Home() {
                 </span>
               </div>
               <h3 className="text-3xl mb-3">Premium Founding Partner</h3>
-              <p className="text-4xl font-bold text-[#0B2D59] mb-4">$1,000 one-time</p>
+              <p className="text-4xl font-bold text-[#0B2D59] mb-4">$997 one-time</p>
               <p className="text-gray-600 mb-6 italic">
-                For: Business owners who understand community goodwill is built, not bought. You want lasting recognition with premium visibility.
+                6 spots available - Large logo display<br />
+                Video production within 30 days of payment based on our schedules
+              </p>
+              <p className="text-gray-600 mb-6">
+                For: Business owners who understand credibility is built, not bought. You want lasting recognition with premium visibility.
               </p>
               <div className="space-y-3 mb-6">
                 <div className="flex items-start">
@@ -369,8 +373,12 @@ export default function Home() {
                 </span>
               </div>
               <h3 className="text-3xl mb-3">Standard Founding Partner</h3>
-              <p className="text-4xl font-bold text-[#0B2D59] mb-4">$650 one-time</p>
+              <p className="text-4xl font-bold text-[#0B2D59] mb-4">$597 one-time</p>
               <p className="text-gray-600 mb-6 italic">
+                15 spots available - Medium logo display<br />
+                Video production within 30 days of payment based on our schedules
+              </p>
+              <p className="text-gray-600 mb-6">
                 For: Business owners who want to be part of something bigger and support the community.
               </p>
               <div className="space-y-3 mb-6">
@@ -495,8 +503,8 @@ export default function Home() {
                 </SelectTrigger>
                 <SelectContent>
                   <SelectItem value="title">Title Sponsor - $4,500</SelectItem>
-                  <SelectItem value="premium">Premium Founding Partner - $1,000</SelectItem>
-                  <SelectItem value="standard">Standard Founding Partner - $650</SelectItem>
+                  <SelectItem value="premium">Premium Founding Partner - $997</SelectItem>
+                  <SelectItem value="standard">Standard Founding Partner - $597</SelectItem>
                   <SelectItem value="contributor">Launch Contributor - $50</SelectItem>
                 </SelectContent>
               </Select>
@@ -783,7 +791,7 @@ export default function Home() {
               <div className="h-48 bg-gray-800 rounded-lg overflow-hidden">
                 <MapView
                   initialCenter={{ lat: 50.4489, lng: -119.1961 }}
-                  initialZoom={8}
+                  initialZoom={9}
                   onMapReady={(map) => {
                     // Armstrong, BC coordinates
                     const center = { lat: 50.4489, lng: -119.1961 };

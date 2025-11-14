@@ -155,3 +155,7 @@
 - [x] Remove "Priority access to pet reunion testimonials/photos" from Title Sponsor benefits
 - [x] Update FAQ about individual sponsors to reference Launch Contributor tier instead of Founding Partner
 - [x] Change story time from 9 PM to 7 PM in emotional scenario
+- [x] Change Premium Founding Partner price from $1,000 to $997
+- [x] Change Standard Founding Partner price from $650 to $597
+- [x] Add video production timeline note (within 30 days of payment) to both Founding Partner tiers
+- [x] Fix Google Map centering to properly center on Armstrong (increased zoom to 9)
