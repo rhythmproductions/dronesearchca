@@ -19,6 +19,11 @@ export default function Home() {
     questions: ""
   });
 
+  // Funding progress - UPDATE THIS VALUE to change the progress bar
+  const fundingPercentage = 0; // Change this number (0-100) to update progress
+  const fundingGoal = 12000;
+  const fundingRaised = Math.round((fundingGoal * fundingPercentage) / 100);
+
   const scrollToSection = (sectionId: string) => {
     const element = document.getElementById(sectionId);
     if (element) {
@@ -51,12 +56,12 @@ export default function Home() {
 
   const handleFoundingFormSubmit = (e: FormEvent) => {
     e.preventDefault();
-    if (!foundingForm.email) {
-      toast.error("Please enter your email address");
+    if (!foundingForm.email || !foundingForm.yourName) {
+      toast.error("Please fill in required fields");
       return;
     }
-    console.log("Founding form submission:", { ...foundingForm, timestamp: new Date().toISOString(), source: "founding-form" });
-    toast.success("✓ Got it! We'll reach out within 24 hours. Check your email for confirmation—and thank you for considering becoming a founding sponsor.");
+    console.log("Founding sponsor inquiry:", { ...foundingForm, timestamp: new Date().toISOString() });
+    toast.success("✓ Thank you! We'll be in touch within 24 hours.");
     setFoundingForm({
       sponsorshipInterest: "",
       businessName: "",
@@ -207,11 +212,35 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Section 4: The Accessibility Challenge */}
-      <section className="py-20 bg-white">
+      {/* Section 4: Email Capture (Community) */}
+      <section className="py-16 bg-white">
+        <div className="container max-w-2xl text-center">
+          <h2 className="text-3xl text-[#0B2D59] mb-6">
+            Want Updates on the Launch?
+          </h2>
+          <p className="text-lg mb-8">
+            Join the community. We'll notify you when thermal pet search goes live in the North Okanagan.
+          </p>
+          <form onSubmit={handleCommunityEmailSubmit} className="flex flex-col sm:flex-row gap-3 max-w-md mx-auto">
+            <Input
+              type="email"
+              placeholder="Your email address"
+              value={communityEmail}
+              onChange={(e) => setCommunityEmail(e.target.value)}
+              className="flex-1"
+            />
+            <Button type="submit" className="bg-[#FF6200] hover:bg-[#FF6200]/90">
+              Notify Me
+            </Button>
+          </form>
+        </div>
+      </section>
+
+      {/* Section 5: Why This Service Can't Exist Without Community Leaders */}
+      <section className="py-20 bg-gray-100">
         <div className="container max-w-5xl">
           <h2 className="text-4xl md:text-5xl text-[#0B2D59] mb-10 text-center">
-            Why This Service Can't Exist Without Community Leaders
+            Why This Service Can't Exist<br />Without Community Leaders
           </h2>
           <div className="text-lg leading-relaxed space-y-6">
             <p className="font-semibold">Here's the reality:</p>
@@ -227,39 +256,7 @@ export default function Home() {
             <p>
               Your contribution doesn't fund "Mike's new drone." It funds accessible hope for every pet owner in the North Okanagan.
             </p>
-            <p>
-              Without community support, thermal search exists but remains out of reach. With founding sponsors, it becomes accessible to families regardless of their financial situation.
-            </p>
-            <p className="font-bold text-xl">That's not charity. That's community infrastructure.</p>
-            <p className="text-xl italic">
-              You become one of the leaders who looked at a gap and said: "Not on my watch. This is happening, and everyone gets access."
-            </p>
           </div>
-        </div>
-      </section>
-
-      {/* Section 5: Email Capture (Community) */}
-      <section className="py-16 bg-gray-100">
-        <div className="container max-w-2xl text-center">
-          <h2 className="text-3xl md:text-4xl text-[#0B2D59] mb-6">
-            Want Updates as We Launch?
-          </h2>
-          <p className="text-lg mb-8">
-            Join our email list to be notified when DroneSearch.ca goes live and learn how to access thermal pet search in your community.
-          </p>
-          <form onSubmit={handleCommunityEmailSubmit} className="flex flex-col sm:flex-row gap-4">
-            <Input
-              type="email"
-              placeholder="Your email address"
-              value={communityEmail}
-              onChange={(e) => setCommunityEmail(e.target.value)}
-              className="flex-1"
-              required
-            />
-            <Button type="submit" className="bg-[#FF6200] hover:bg-[#FF6200]/90">
-              Notify Me When We Launch
-            </Button>
-          </form>
         </div>
       </section>
 
@@ -270,7 +267,7 @@ export default function Home() {
             Founding Sponsor Opportunities
           </h2>
           <p className="text-xl text-center mb-4 max-w-4xl mx-auto">
-            Two ways to secure recognition as a community leader who made this possible. Limited spots available—your support launches this service.
+            Four ways to secure recognition as a community leader who made this possible. Limited spots available—your support launches this service.
           </p>
           <p className="text-center mb-12 text-gray-600 max-w-3xl mx-auto">
             Founding Sponsorships are one-time investments with lasting recognition. You'll be remembered as someone who made thermal pet rescue accessible in our region.
@@ -289,7 +286,6 @@ export default function Home() {
               <p className="text-gray-600 mb-6 italic">
                 For: The business leader who doesn't just support—they LEAD. You want your brand synonymous with pet rescue in the North Okanagan.
               </p>
-              <p className="text-sm font-semibold text-gray-700 mb-4">Title Sponsor Benefits (Different from Founding Partners):</p>
               <div className="space-y-3 mb-6">
                 <div className="flex items-start">
                   <Check className="text-[#00FFC2] mr-3 mt-1 flex-shrink-0" />
@@ -309,11 +305,11 @@ export default function Home() {
                 </div>
                 <div className="flex items-start">
                   <Check className="text-[#00FFC2] mr-3 mt-1 flex-shrink-0" />
-                  <span>3-month video content training program for your staff - Monthly 90-minute sessions teaching your team to create professional social media content (mobile video, editing, strategy). Value: $6,000</span>
+                  <span>3-month video content training program for your staff - Monthly 90-minute sessions teaching your team to create professional social media content (mobile video, editing, strategy)</span>
                 </div>
                 <div className="flex items-start">
                   <Check className="text-[#00FFC2] mr-3 mt-1 flex-shrink-0" />
-                  <span>Featured in social media posts - "Made possible by..."</span>
+                  <span>Featured in all media coverage - "Made possible by..."</span>
                 </div>
                 <div className="flex items-start">
                   <Check className="text-[#00FFC2] mr-3 mt-1 flex-shrink-0" />
@@ -325,85 +321,124 @@ export default function Home() {
               </p>
             </div>
 
-            {/* Tier 2: Founding Partner */}
+            {/* Tier 2: Premium Founding Partner */}
             <div className="border-l-4 border-[#FF6200] bg-white shadow-lg rounded-lg p-8">
               <div className="mb-4">
                 <span className="inline-block bg-[#FF6200] text-white text-xs font-bold px-3 py-1 rounded uppercase tracking-wide">
-                  MAXIMUM 10 SPOTS
+                  MAXIMUM 6 SPOTS
                 </span>
               </div>
-              <h3 className="text-3xl mb-3">Founding Partner</h3>
-              <p className="text-xl font-bold text-[#0B2D59] mb-4">Two Packages Available</p>
+              <h3 className="text-3xl mb-3">Premium Founding Partner</h3>
+              <p className="text-4xl font-bold text-[#0B2D59] mb-4">$1,000 one-time</p>
               <p className="text-gray-600 mb-6 italic">
-                For: Business owners who understand community goodwill is built, not bought. You want lasting recognition without dominating the spotlight.
+                For: Business owners who understand community goodwill is built, not bought. You want lasting recognition with premium visibility.
               </p>
-
-              {/* Standard Package */}
-              <div className="mb-8 bg-gray-50 rounded-lg p-6">
-                <h4 className="text-2xl font-bold text-[#0B2D59] mb-2">Standard Package: $750 one-time</h4>
-                <p className="text-sm font-semibold text-gray-700 mb-3">What you receive:</p>
-                <div className="space-y-2">
-                  <div className="flex items-start">
-                    <Check className="text-[#00FFC2] mr-3 mt-1 flex-shrink-0" />
-                    <span>Professional video business card (30-60 seconds) for your business by Rhythm Productions (a $1,000 value)</span>
-                  </div>
-                  <div className="flex items-start">
-                    <Check className="text-[#00FFC2] mr-3 mt-1 flex-shrink-0" />
-                    <span>Name engraved on commemorative metal plaque on equipment case</span>
-                  </div>
-                  <div className="flex items-start">
-                    <Check className="text-[#00FFC2] mr-3 mt-1 flex-shrink-0" />
-                    <span>Logo in "Founding Partners" section on website</span>
-                  </div>
-                  <div className="flex items-start">
-                    <Check className="text-[#00FFC2] mr-3 mt-1 flex-shrink-0" />
-                    <span>Individual launch announcement post</span>
-                  </div>
-                  <div className="flex items-start">
-                    <Check className="text-[#00FFC2] mr-3 mt-1 flex-shrink-0" />
-                    <span>Featured in social media success stories (organic, story-based throughout the year)</span>
-                  </div>
-                  <div className="flex items-start">
-                    <Check className="text-[#00FFC2] mr-3 mt-1 flex-shrink-0" />
-                    <span>Founding Partner certificate</span>
-                  </div>
+              <div className="space-y-3 mb-6">
+                <div className="flex items-start">
+                  <Check className="text-[#00FFC2] mr-3 mt-1 flex-shrink-0" />
+                  <span>Full promotional video (90-120 seconds) for your business by Rhythm Productions (a $2,000 value)</span>
+                </div>
+                <div className="flex items-start">
+                  <Check className="text-[#00FFC2] mr-3 mt-1 flex-shrink-0" />
+                  <span>Name with <strong>large logo</strong> engraved on commemorative metal case plaque (premium placement, listed first)</span>
+                </div>
+                <div className="flex items-start">
+                  <Check className="text-[#00FFC2] mr-3 mt-1 flex-shrink-0" />
+                  <span><strong>Large logo</strong> in "Founding Partners" section on website</span>
+                </div>
+                <div className="flex items-start">
+                  <Check className="text-[#00FFC2] mr-3 mt-1 flex-shrink-0" />
+                  <span>Individual launch announcement post</span>
+                </div>
+                <div className="flex items-start">
+                  <Check className="text-[#00FFC2] mr-3 mt-1 flex-shrink-0" />
+                  <span>Featured in social media success stories (organic, story-based throughout the year)</span>
+                </div>
+                <div className="flex items-start">
+                  <Check className="text-[#00FFC2] mr-3 mt-1 flex-shrink-0" />
+                  <span>Founding Partner certificate</span>
                 </div>
               </div>
-
-              {/* Premium Package */}
-              <div className="mb-6 bg-gray-50 rounded-lg p-6">
-                <h4 className="text-2xl font-bold text-[#0B2D59] mb-2">Premium Package: $1,000 one-time</h4>
-                <p className="text-sm font-semibold text-gray-700 mb-3">What you receive:</p>
-                <div className="space-y-2">
-                  <div className="flex items-start">
-                    <Check className="text-[#00FFC2] mr-3 mt-1 flex-shrink-0" />
-                    <span>Full promotional video (90-120 seconds) for your business by Rhythm Productions (a $2,000 value)</span>
-                  </div>
-                  <div className="flex items-start">
-                    <Check className="text-[#00FFC2] mr-3 mt-1 flex-shrink-0" />
-                    <span>Name engraved on commemorative metal plaque with premium placement (listed first) on equipment case</span>
-                  </div>
-                  <div className="flex items-start">
-                    <Check className="text-[#00FFC2] mr-3 mt-1 flex-shrink-0" />
-                    <span>Logo in "Founding Partners" section on website</span>
-                  </div>
-                  <div className="flex items-start">
-                    <Check className="text-[#00FFC2] mr-3 mt-1 flex-shrink-0" />
-                    <span>Individual launch announcement post</span>
-                  </div>
-                  <div className="flex items-start">
-                    <Check className="text-[#00FFC2] mr-3 mt-1 flex-shrink-0" />
-                    <span>Featured in social media success stories (organic, story-based throughout the year)</span>
-                  </div>
-                  <div className="flex items-start">
-                    <Check className="text-[#00FFC2] mr-3 mt-1 flex-shrink-0" />
-                    <span>Founding Partner certificate</span>
-                  </div>
-                </div>
-              </div>
-
               <p className="text-sm italic text-gray-600">
-                All Founding Partners receive the same recognition and status—the only difference is the video package you choose. $750-1,000 is less than one month of outdoor advertising. You'll be recognized as a founding supporter who made pet rescue possible in our region.
+                Premium tier features larger visual presence on all materials.
+              </p>
+            </div>
+
+            {/* Tier 3: Standard Founding Partner */}
+            <div className="border-l-4 border-[#FF6200] bg-white shadow-lg rounded-lg p-8">
+              <div className="mb-4">
+                <span className="inline-block bg-[#FF6200] text-white text-xs font-bold px-3 py-1 rounded uppercase tracking-wide">
+                  MAXIMUM 15 SPOTS
+                </span>
+              </div>
+              <h3 className="text-3xl mb-3">Standard Founding Partner</h3>
+              <p className="text-4xl font-bold text-[#0B2D59] mb-4">$650 one-time</p>
+              <p className="text-gray-600 mb-6 italic">
+                For: Business owners who want to be part of something bigger and support the community.
+              </p>
+              <div className="space-y-3 mb-6">
+                <div className="flex items-start">
+                  <Check className="text-[#00FFC2] mr-3 mt-1 flex-shrink-0" />
+                  <span>Professional video business card (30-60 seconds) for your business by Rhythm Productions (a $1,000 value)</span>
+                </div>
+                <div className="flex items-start">
+                  <Check className="text-[#00FFC2] mr-3 mt-1 flex-shrink-0" />
+                  <span>Name with <strong>medium logo</strong> engraved on commemorative metal case plaque</span>
+                </div>
+                <div className="flex items-start">
+                  <Check className="text-[#00FFC2] mr-3 mt-1 flex-shrink-0" />
+                  <span><strong>Medium logo</strong> in "Founding Partners" section on website</span>
+                </div>
+                <div className="flex items-start">
+                  <Check className="text-[#00FFC2] mr-3 mt-1 flex-shrink-0" />
+                  <span>Individual launch announcement post</span>
+                </div>
+                <div className="flex items-start">
+                  <Check className="text-[#00FFC2] mr-3 mt-1 flex-shrink-0" />
+                  <span>Featured in social media success stories (organic, story-based throughout the year)</span>
+                </div>
+                <div className="flex items-start">
+                  <Check className="text-[#00FFC2] mr-3 mt-1 flex-shrink-0" />
+                  <span>Founding Partner certificate</span>
+                </div>
+              </div>
+              <p className="text-sm italic text-gray-600">
+                Same recognition and status as Premium, with medium-sized visual presence.
+              </p>
+            </div>
+
+            {/* Tier 4: Launch Contributor */}
+            <div className="border-l-4 border-[#FF6200] bg-white shadow-lg rounded-lg p-8">
+              <div className="mb-4">
+                <span className="inline-block bg-[#00FFC2] text-white text-xs font-bold px-3 py-1 rounded uppercase tracking-wide">
+                  UNLIMITED SPOTS
+                </span>
+              </div>
+              <h3 className="text-3xl mb-3">Launch Contributor</h3>
+              <p className="text-4xl font-bold text-[#0B2D59] mb-4">$50 one-time</p>
+              <p className="text-gray-600 mb-6 italic">
+                For: Small businesses, sole proprietors, and individuals who want to be part of the launch story.
+              </p>
+              <div className="space-y-3 mb-6">
+                <div className="flex items-start">
+                  <Check className="text-[#00FFC2] mr-3 mt-1 flex-shrink-0" />
+                  <span>Business name hyperlinked in "Launch Contributors" section on website</span>
+                </div>
+                <div className="flex items-start">
+                  <Check className="text-[#00FFC2] mr-3 mt-1 flex-shrink-0" />
+                  <span>Direct backlink to your business website (SEO value)</span>
+                </div>
+                <div className="flex items-start">
+                  <Check className="text-[#00FFC2] mr-3 mt-1 flex-shrink-0" />
+                  <span>Included in community supporter acknowledgments</span>
+                </div>
+                <div className="flex items-start">
+                  <Check className="text-[#00FFC2] mr-3 mt-1 flex-shrink-0" />
+                  <span>Part of the launch story forever</span>
+                </div>
+              </div>
+              <p className="text-sm italic text-gray-600">
+                Perfect for small businesses, sole proprietors, and individuals.
               </p>
             </div>
           </div>
@@ -416,32 +451,27 @@ export default function Home() {
 
       {/* Section 7: The Moment You're Funding */}
       <section className="py-20 bg-[#0B2D59] text-white">
-        <div className="container max-w-4xl">
-          <h2 className="text-4xl md:text-5xl mb-12 text-center">
+        <div className="container max-w-5xl">
+          <h2 className="text-4xl md:text-5xl mb-10 text-center">
             Picture This Moment
           </h2>
-          <div className="text-lg leading-relaxed space-y-4 text-center mb-12">
-            <p>It's 11 PM. October. Cold. Dark.</p>
+          <div className="text-lg leading-relaxed space-y-6">
             <p>
-              A family's 14-year-old Lab wandered off during an evening walk. She's deaf, nearly blind, disoriented. Somewhere in the forest behind their property.
+              It's 9 PM. A family's 14-year-old golden retriever wandered off six hours ago. They've walked every trail, called until their voices gave out, posted on every Facebook group.
             </p>
-            <p>They've been searching for hours. Flashlights. Calling her name. Nothing.</p>
-            <p className="font-semibold">Terror is setting in.</p>
-            <p>They call DroneSearch.ca.</p>
+            <p className="font-semibold">They're losing hope.</p>
             <p>
-              Within 45 minutes, thermal imaging reveals a bright heat signature 400 meters into the trees. Motionless under a deadfall.
+              Then they remember: DroneSearch.ca exists because people like you stepped forward.
             </p>
-            <p>The family reaches her in 8 minutes.</p>
-            <p className="font-semibold">She's cold. She's scared. But she's alive.</p>
-            <p>They carry her home.</p>
-          </div>
-          
-          <div className="border-t-2 border-[#00FFC2] my-12" />
-          
-          <div className="text-xl leading-relaxed space-y-6 text-center font-semibold">
-            <p>That moment only exists if founding sponsors make it real.</p>
-            <p>Without you, that family searches until they give up. With you, that dog comes home.</p>
-            <p>You're not funding equipment. You're funding every version of that moment.</p>
+            <p>
+              One call. Thermal drone in the air within the hour. Heat signature detected 200 meters into dense forest—motionless, hidden, but alive.
+            </p>
+            <p className="font-bold text-xl">
+              That reunion happens because you made the $199 call-out fee possible instead of $1,200.
+            </p>
+            <p>
+              This isn't theoretical. This is the difference founding sponsors make.
+            </p>
           </div>
         </div>
       </section>
@@ -449,47 +479,50 @@ export default function Home() {
       {/* Section 8: Founding Form */}
       <section className="py-20 bg-white">
         <div className="container max-w-3xl">
-          <h2 className="text-4xl md:text-5xl text-[#0B2D59] mb-6 text-center">
+          <h2 className="text-4xl text-[#0B2D59] mb-6 text-center">
             Secure Your Founding Spot
           </h2>
-          <p className="text-center mb-10 text-gray-600">
-            This form doesn't commit you to payment—it starts a conversation. We'll contact you within 24 hours to discuss details and answer questions.
+          <p className="text-center mb-10 text-lg">
+            Fill out this form and we'll contact you within 24 hours to finalize your founding sponsorship.
           </p>
           
-          <form onSubmit={handleFoundingFormSubmit} className="space-y-6">
+          <form onSubmit={handleFoundingFormSubmit} className="space-y-6 bg-gray-50 p-8 rounded-lg">
             <div>
-              <label className="block text-sm font-semibold mb-2">Sponsorship Interest</label>
-              <Select value={foundingForm.sponsorshipInterest} onValueChange={(value) => setFoundingForm({...foundingForm, sponsorshipInterest: value})}>
+              <label className="block text-sm font-semibold mb-2">Sponsorship Interest *</label>
+              <Select 
+                value={foundingForm.sponsorshipInterest}
+                onValueChange={(value) => setFoundingForm({...foundingForm, sponsorshipInterest: value})}
+              >
                 <SelectTrigger>
-                  <SelectValue placeholder="Select an option" />
+                  <SelectValue placeholder="Select a tier" />
                 </SelectTrigger>
                 <SelectContent>
-                  <SelectItem value="title">Title Sponsor ($5,000)</SelectItem>
-                  <SelectItem value="partner">Founding Partner ($2,000)</SelectItem>
-                  <SelectItem value="supporter">Founding Supporter ($500)</SelectItem>
-                  <SelectItem value="info">Just gathering information</SelectItem>
-                  <SelectItem value="help">Not sure yet—help me decide</SelectItem>
+                  <SelectItem value="title">Title Sponsor - $4,500</SelectItem>
+                  <SelectItem value="premium">Premium Founding Partner - $1,000</SelectItem>
+                  <SelectItem value="standard">Standard Founding Partner - $650</SelectItem>
+                  <SelectItem value="contributor">Launch Contributor - $50</SelectItem>
                 </SelectContent>
               </Select>
             </div>
 
             <div>
-              <label className="block text-sm font-semibold mb-2">Business or Individual Name</label>
+              <label className="block text-sm font-semibold mb-2">Business Name (if applicable)</label>
               <Input
                 type="text"
                 value={foundingForm.businessName}
                 onChange={(e) => setFoundingForm({...foundingForm, businessName: e.target.value})}
-                placeholder="Your business or personal name"
+                placeholder="Your business name"
               />
             </div>
 
             <div>
-              <label className="block text-sm font-semibold mb-2">Your Name</label>
+              <label className="block text-sm font-semibold mb-2">Your Name *</label>
               <Input
                 type="text"
                 value={foundingForm.yourName}
                 onChange={(e) => setFoundingForm({...foundingForm, yourName: e.target.value})}
-                placeholder="Contact person name"
+                placeholder="First and last name"
+                required
               />
             </div>
 
@@ -505,31 +538,31 @@ export default function Home() {
             </div>
 
             <div>
-              <label className="block text-sm font-semibold mb-2">Phone (optional)</label>
+              <label className="block text-sm font-semibold mb-2">Phone</label>
               <Input
                 type="tel"
                 value={foundingForm.phone}
                 onChange={(e) => setFoundingForm({...foundingForm, phone: e.target.value})}
-                placeholder="(250) 555-1234"
+                placeholder="(250) 555-0123"
               />
             </div>
 
             <div>
-              <label className="block text-sm font-semibold mb-2">Questions or What You're Thinking (optional)</label>
+              <label className="block text-sm font-semibold mb-2">Questions or Comments</label>
               <Textarea
                 value={foundingForm.questions}
                 onChange={(e) => setFoundingForm({...foundingForm, questions: e.target.value})}
-                placeholder="Any questions or thoughts you'd like to share..."
+                placeholder="Any questions about your sponsorship?"
                 rows={4}
               />
             </div>
 
-            <Button type="submit" size="lg" className="w-full bg-[#FF6200] hover:bg-[#FF6200]/90 text-lg">
-              Request Information
+            <Button type="submit" className="w-full bg-[#FF6200] hover:bg-[#FF6200]/90 text-lg py-6">
+              Submit Sponsorship Inquiry
             </Button>
           </form>
 
-          <p className="text-center text-sm text-gray-500 mt-6">
+          <p className="text-center mt-6 text-sm text-gray-600">
             Your information is secure and will only be used to contact you about founding sponsorship opportunities.
           </p>
         </div>
@@ -603,21 +636,22 @@ export default function Home() {
           
           <div className="mb-8">
             <div className="flex justify-between mb-2">
-              <span className="text-lg font-semibold">$0 raised</span>
-              <span className="text-lg font-semibold">$12,000 goal</span>
+              <span className="text-lg font-semibold">${fundingRaised.toLocaleString()} raised</span>
+              <span className="text-lg font-semibold">${fundingGoal.toLocaleString()} goal</span>
             </div>
             <div className="w-full bg-gray-200 rounded-full h-8 overflow-hidden">
               <div 
                 className="bg-[#FF6200] h-full rounded-full transition-all duration-500"
-                style={{ width: '0%' }}
+                style={{ width: `${fundingPercentage}%` }}
               />
             </div>
+            <p className="text-center mt-2 text-sm text-gray-600">{fundingPercentage}% funded</p>
           </div>
 
           <div className="text-center text-lg leading-relaxed space-y-4 max-w-2xl mx-auto">
             <p>Every founding sponsor closes the gap between "good idea" and "actual rescue service."</p>
-            <p>Once the equipment is purchased, founding sponsorship opportunities permanently close.</p>
-            <p className="font-bold text-xl">You're either part of the origin story or you're not.</p>
+            <p className="font-bold text-xl">Founding sponsorship opportunities close once equipment is purchased—reserve your spot now.</p>
+            <p className="italic text-gray-600">You're either part of the origin story or you're not.</p>
           </div>
         </div>
       </section>
@@ -629,12 +663,12 @@ export default function Home() {
             Meet Your Pilot
           </h2>
           
-          <div className="grid md:grid-cols-2 gap-12 items-center">
+          <div className="grid md:grid-cols-2 gap-12 items-start">
             <div>
               <img 
                 src="/pilot-with-drone.jpg" 
-                alt="Mike, DroneSearch.ca pilot with thermal imaging drone"
-                className="rounded-lg shadow-lg w-full"
+                alt="Mike with thermal imaging drone"
+                className="w-full rounded-lg shadow-lg"
               />
             </div>
             
@@ -689,124 +723,95 @@ export default function Home() {
             Get Updates on Founding Opportunities
           </h2>
           <p className="text-lg mb-8">
-            Want to stay informed but not ready to commit? Join our sponsor update list.
+            Spots are filling. Get notified when new sponsorship opportunities open or tiers change.
           </p>
-          <form onSubmit={handleSponsorEmailSubmit} className="flex flex-col sm:flex-row gap-4">
+          <form onSubmit={handleSponsorEmailSubmit} className="flex flex-col sm:flex-row gap-3 max-w-md mx-auto">
             <Input
               type="email"
               placeholder="Your email address"
               value={sponsorEmail}
               onChange={(e) => setSponsorEmail(e.target.value)}
               className="flex-1"
-              required
             />
             <Button type="submit" className="bg-[#FF6200] hover:bg-[#FF6200]/90">
-              Send Me Sponsor Updates
+              Keep Me Updated
             </Button>
           </form>
         </div>
       </section>
 
-      {/* Section 13: Final CTA */}
+      {/* Section 13: Ready to Step In */}
       <section className="py-20 bg-[#FF6200] text-white">
         <div className="container max-w-4xl text-center">
           <h2 className="text-4xl md:text-5xl mb-8">
             Ready to Step In?
           </h2>
-          <div className="text-xl leading-relaxed space-y-6 mb-10">
-            <p>
-              You now understand why thermal search matters, why it requires community support, and what you become as a founding sponsor.
-            </p>
-            <p className="font-semibold">There's only one question left:</p>
-            <p>
-              Will you be part of the story where North Okanagan became the first region in BC with accessible thermal pet rescue?
-            </p>
-          </div>
+          <p className="text-xl mb-10 max-w-3xl mx-auto">
+            This is your chance to be remembered as someone who made thermal pet rescue accessible in the North Okanagan. Founding sponsorships close once equipment is purchased.
+          </p>
           <Button 
             size="lg" 
-            className="bg-[#0B2D59] hover:bg-[#0B2D59]/90 text-white text-lg px-10 py-6"
+            className="text-lg px-8 py-6 bg-white text-[#FF6200] hover:bg-gray-100"
             onClick={() => scrollToSection("founding-opportunities")}
           >
-            Request Founding Sponsor Information →
+            View Founding Opportunities
           </Button>
         </div>
       </section>
 
-      {/* Section 14: Footer */}
+      {/* Footer */}
       <footer className="bg-[#1E1E1E] text-white py-12">
-        <div className="container">
-          <div className="grid md:grid-cols-3 gap-12 mb-12">
+        <div className="container max-w-6xl">
+          <div className="grid md:grid-cols-3 gap-8 mb-8">
             <div>
-              <h3 className="text-2xl font-bold mb-4">DroneSearch.ca</h3>
-              <p className="mb-2">Bringing thermal pet search to the North Okanagan</p>
-              <p className="text-gray-400">Serving Vernon, Armstrong, Salmon Arm & surrounding communities</p>
-            </div>
-            
-            <div>
-              <h4 className="text-xl font-bold mb-4">CONTACT</h4>
-              <p>
-                Email: <a href="mailto:info@dronesearch.ca" className="text-[#00FFC2] hover:underline">info@dronesearch.ca</a>
+              <h3 className="text-xl font-bold mb-4">DroneSearch.ca</h3>
+              <p className="text-gray-400">
+                Thermal imaging pet search service for the North Okanagan.
               </p>
             </div>
-            
             <div>
-              <h4 className="text-xl font-bold mb-4">CONNECT</h4>
-              <div className="flex gap-4">
-                <a href="https://facebook.com" target="_blank" rel="noopener noreferrer" className="hover:text-[#00FFC2] transition-colors">
-                  <Facebook size={24} />
-                </a>
-                <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" className="hover:text-[#00FFC2] transition-colors">
-                  <Instagram size={24} />
-                </a>
-                <a href="https://twitter.com" target="_blank" rel="noopener noreferrer" className="hover:text-[#00FFC2] transition-colors">
-                  <Twitter size={24} />
-                </a>
-                <a href="https://tiktok.com" target="_blank" rel="noopener noreferrer" className="hover:text-[#00FFC2] transition-colors">
-                  <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
-                    <path d="M19.59 6.69a4.83 4.83 0 0 1-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 0 1-5.2 1.74 2.89 2.89 0 0 1 2.31-4.64 2.93 2.93 0 0 1 .88.13V9.4a6.84 6.84 0 0 0-1-.05A6.33 6.33 0 0 0 5 20.1a6.34 6.34 0 0 0 10.86-4.43v-7a8.16 8.16 0 0 0 4.77 1.52v-3.4a4.85 4.85 0 0 1-1-.1z"/>
-                  </svg>
-                </a>
-                <a href="https://youtube.com" target="_blank" rel="noopener noreferrer" className="hover:text-[#00FFC2] transition-colors">
-                  <Youtube size={24} />
-                </a>
+              <h3 className="text-xl font-bold mb-4">Contact</h3>
+              <p className="text-gray-400">
+                Email: <a href="mailto:info@dronesearch.ca" className="text-[#FF6200] hover:underline">info@dronesearch.ca</a>
+              </p>
+            </div>
+            <div>
+              <h3 className="text-xl font-bold mb-4">Service Area</h3>
+              <div className="h-48 bg-gray-800 rounded-lg overflow-hidden">
+                <MapView
+                  initialCenter={{ lat: 50.4489, lng: -119.1961 }}
+                  initialZoom={8}
+                  onMapReady={(map) => {
+                    // Armstrong, BC coordinates
+                    const center = { lat: 50.4489, lng: -119.1961 };
+                    
+                    // Add marker for Armstrong
+                    new google.maps.marker.AdvancedMarkerElement({
+                      position: center,
+                      map: map,
+                      title: "Armstrong, BC"
+                    });
+                    
+                    // Add circle showing 2-hour service radius (approximately 150km)
+                    new google.maps.Circle({
+                      strokeColor: "#FF6200",
+                      strokeOpacity: 0.8,
+                      strokeWeight: 2,
+                      fillColor: "#FF6200",
+                      fillOpacity: 0.2,
+                      map: map,
+                      center: center,
+                      radius: 150000, // 150km in meters
+                    });
+                  }}
+                />
               </div>
+              <p className="text-gray-400 text-sm mt-2">Vernon, Armstrong, Salmon Arm & surrounding areas</p>
             </div>
           </div>
-
-          {/* Map Section */}
-          <div className="mb-8 rounded-lg overflow-hidden" style={{ height: '400px' }}>
-            <MapView
-              onMapReady={(map) => {
-                // Center on Armstrong, BC
-                const armstrong = { lat: 50.4489, lng: -119.1961 };
-                map.setCenter(armstrong);
-                map.setZoom(8);
-
-                // Add marker for Armstrong
-                new window.google.maps.Marker({
-                  position: armstrong,
-                  map: map,
-                  title: "Armstrong, BC - Service Area Center"
-                });
-
-                // Add circle for 2-hour driving radius (approximately 150km)
-                new window.google.maps.Circle({
-                  strokeColor: "#00FFC2",
-                  strokeOpacity: 0.8,
-                  strokeWeight: 2,
-                  fillColor: "#00FFC2",
-                  fillOpacity: 0.15,
-                  map: map,
-                  center: armstrong,
-                  radius: 150000, // 150km in meters
-                });
-              }}
-            />
-          </div>
-
-          <div className="border-t border-gray-700 pt-8 text-center text-sm text-gray-400">
-            <p className="mb-2">© 2025 DroneSearch.ca | Privacy Policy | Terms of Service</p>
-            <p>Monthly ongoing partnership opportunities available after launch—inquire for details.</p>
+          
+          <div className="border-t border-gray-700 pt-8 text-center text-gray-400 text-sm">
+            <p>&copy; 2024 DroneSearch.ca. All rights reserved.</p>
           </div>
         </div>
       </footer>

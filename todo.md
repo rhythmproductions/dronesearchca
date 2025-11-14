@@ -134,3 +134,11 @@
 - [x] Add "by Rhythm Productions" with values to Founding Partner video benefits ($1,000 for Standard, $2,000 for Premium)
 - [x] Add clarification that this is non-emergency service (Vernon Search and Rescue handles emergencies)
 - [x] Add non-emergency service clarification as FAQ question
+- [x] Restructure sponsorship tiers to 4 levels: Title Sponsor $4,500 (1 spot), Premium Founding Partner $1,000 (6 spots), Standard Founding Partner $650 (15 spots), Launch Contributor $50 (unlimited)
+- [x] Update Title Sponsor benefits (remove video training value, change "social media posts" back to "all media coverage")
+- [x] Create Premium Founding Partner tier with large logo display
+- [x] Create Standard Founding Partner tier with medium logo display
+- [x] Create Launch Contributor tier with hyperlinked text names
+- [x] Update funding goal progress bar to be easily updatable with percentage (change fundingPercentage variable at top of Home.tsx)
+- [x] Add visual size differentiation between Premium (large) and Standard (medium) logos
+- [x] Update funding goal note about opportunities closing
