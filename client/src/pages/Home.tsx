@@ -311,10 +311,7 @@ export default function Home() {
                   <Check className="text-[#00FFC2] mr-3 mt-1 flex-shrink-0" />
                   <span>Featured in all media coverage - "Made possible by..."</span>
                 </div>
-                <div className="flex items-start">
-                  <Check className="text-[#00FFC2] mr-3 mt-1 flex-shrink-0" />
-                  <span>Priority access when pets are reunited (testimonials, photos, stories)</span>
-                </div>
+
               </div>
               <p className="text-sm italic text-gray-600">
                 You'll be recognized as a founding supporter who made this service possible.
@@ -457,7 +454,7 @@ export default function Home() {
           </h2>
           <div className="text-lg leading-relaxed space-y-6">
             <p>
-              It's 9 PM. A family's 14-year-old golden retriever wandered off six hours ago. They've walked every trail, called until their voices gave out, posted on every Facebook group.
+              It's 7 PM. A family's 14-year-old golden retriever wandered off six hours ago. They've walked every trail, called until their voices gave out, posted on every Facebook group.
             </p>
             <p className="font-semibold">They're losing hope.</p>
             <p>
@@ -606,7 +603,7 @@ export default function Home() {
             <div>
               <h3 className="text-xl font-bold mb-3 text-[#0B2D59]">Q: Can individuals (not businesses) be founding sponsors?</h3>
               <p className="text-lg leading-relaxed">
-                A: Absolutely. Individual sponsors are welcome in the Founding Partner tier. No business required—just a desire to make this real.
+                A: Absolutely. Individual sponsors are welcome in the Launch Contributor tier. No business required—just a desire to make this real.
               </p>
             </div>
 

@@ -152,3 +152,6 @@
 - [ ] Compress and optimize all images (user can do this when replacing with real images)
 - [x] Change call-out fee from $199 to "Starting at $299" throughout site (6 instances updated)
 - [x] Update progress bar labels from dollar amounts to percentages (0% funded / 100% funded)
+- [x] Remove "Priority access to pet reunion testimonials/photos" from Title Sponsor benefits
+- [x] Update FAQ about individual sponsors to reference Launch Contributor tier instead of Founding Partner
+- [x] Change story time from 9 PM to 7 PM in emotional scenario
