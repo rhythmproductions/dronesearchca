@@ -335,3 +335,5 @@
 - [x] Fix thermometer fill calculation bug when funding exceeds $12,000
 - [x] Fix thermometer display for amounts over $15,000
 - [x] Add green button feedback with "Amount Updated" text for 5 seconds
+- [x] Remove max="15000" constraint on funding input field
+- [x] Reduce button green feedback time from 5 to 3 seconds

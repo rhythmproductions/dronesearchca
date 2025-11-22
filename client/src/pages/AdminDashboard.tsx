@@ -34,11 +34,11 @@ export default function AdminDashboard() {
     updateFundingAmount(fundingAmount);
     toast.success('Funding amount updated successfully!');
     
-    // Show green success state for 5 seconds
+    // Show green success state for 3 seconds
     setIsSaved(true);
     setTimeout(() => {
       setIsSaved(false);
-    }, 5000);
+    }, 3000);
   };
 
   const handleLogout = () => {
@@ -144,10 +144,9 @@ export default function AdminDashboard() {
                     id="funding-amount"
                     type="number"
                     min="0"
-                    max="15000"
                     step="100"
                     value={fundingAmount}
-                    onChange={(e) => setFundingAmount(Math.min(15000, Math.max(0, parseInt(e.target.value) || 0)))}
+                    onChange={(e) => setFundingAmount(Math.max(0, parseInt(e.target.value) || 0))}
                     className="w-32"
                   />
                   <span className="text-sm text-gray-600">of $15,000 stretch goal</span>
