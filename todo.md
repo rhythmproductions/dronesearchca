@@ -355,3 +355,9 @@
 - [x] Change Funding Tracker section to white background
 - [x] Fix deployment packaging error
 - [x] Configure pnpm for deployment-compatible node_modules structure
+- [ ] Investigate persistent deployment packaging error
+- [x] Remove "Veterinary clinics and pet services confirm..." sentence
+- [x] Change "imaging equipment: $12,000+" to "drones can cost over $12,000!"
+- [x] Remove "Your video purchase bridges this gap."
+- [x] Update "get marketing content they need" text
+- [x] Bold and update organization names text

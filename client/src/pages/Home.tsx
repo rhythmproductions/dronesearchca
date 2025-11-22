@@ -199,7 +199,7 @@ export default function Home() {
           </h2>
 
           <div className="text-lg leading-relaxed space-y-6 text-gray-800">
-            <p className="text-xl mb-6 text-center"><span className="font-semibold">Here's the reality:</span> Professional thermal imaging equipment: <span className="font-bold">$12,000+</span></p>
+            <p className="text-xl mb-6 text-center"><span className="font-semibold">Here's the reality:</span> Drones can cost over <span className="font-bold">$12,000!</span></p>
             
             <div className="grid md:grid-cols-2 gap-6 mb-6">
               <div>
@@ -239,16 +239,12 @@ export default function Home() {
               </div>
             </div>
             
-            <p className="text-xl font-bold text-center">
-              Your video purchase bridges this gap.
+            <p className="mt-8">
+              Lost pet emergencies are rare for any single family—but devastating when they happen. Your video purchase ensures thermal search exists for those critical moments, while your business gains marketing content and community positioning that compounds for years.
             </p>
             
             <p className="mt-8">
-              Veterinary clinics and pet services confirm what we expected: lost pet emergencies are rare for any single family—but devastating when they happen. Your video purchase ensures thermal search exists for those critical moments, while your business gains marketing content and community positioning that compounds for years.
-            </p>
-            
-            <p className="mt-8">
-              To fund this equipment, I'm offering professional video production at 50% off my normal rates through December 2025. Local businesses get marketing content they need, I fund the thermal equipment, and our community gets a service that helps families find their lost pets.
+              To fund this equipment, I'm offering professional video production at 50% off my normal rates through December 2025. Local businesses get marketing content that moves their business forward, I get to fund the thermal equipment, and our community gets a service that helps families find their lost pets.
             </p>
           </div>
         </div>
@@ -271,7 +267,7 @@ export default function Home() {
           
           <div className="text-lg leading-relaxed space-y-6 text-gray-800">
             <p>
-              I'm Mike, North Okanagan resident, Transport Canada Advanced RPAS certified pilot and professional video strategist with over a decade of experience. I've been creating video content through Rhythm Productions for years—working with organizations like Vernon Winter Carnival, United Way, and Community Futures.
+              I'm Mike, North Okanagan resident, Transport Canada Advanced RPAS certified pilot and professional video strategist with over a decade of experience. I've been creating video content through Rhythm Productions for years—working with organizations like <strong>Vernon Winter Carnival, United Way, BC Winter Games, and Community Futures</strong>.
             </p>
             
             <p className="font-semibold mt-8">
