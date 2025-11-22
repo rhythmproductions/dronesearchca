@@ -337,3 +337,7 @@
 - [x] Add green button feedback with "Amount Updated" text for 5 seconds
 - [x] Remove max="15000" constraint on funding input field
 - [x] Reduce button green feedback time from 5 to 3 seconds
+- [x] Change "brings lost pets home" to "brings home lost pets"
+- [x] Move videos and help text into package boxes under titles
+- [x] Change "offering two" to "discounting two by half!"
+- [x] Reorganize custom production and professional content text blocks

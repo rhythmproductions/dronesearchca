@@ -152,7 +152,7 @@ export default function Home() {
             Get Professional Videos at 50% Off
           </h1>
           <p className="text-xl md:text-2xl mb-10 leading-relaxed max-w-4xl mx-auto">
-            Help fund the thermal equipment that brings lost pets home in the North Okanagan and Shuswap
+            Help fund the thermal equipment that brings home lost pets in the North Okanagan and Shuswap
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
             <Button 
@@ -275,17 +275,41 @@ export default function Home() {
             </p>
             
             <p className="font-semibold mt-8">
-              Through December, I'm offering two video packages:
+              Through December, I'm discounting two video packages by half!
             </p>
             
             <div className="bg-gray-50 p-6 rounded-lg">
               <h3 className="text-2xl font-bold text-[#0B2D59] mb-3">Business Card Video - 2 payments of $199 ($398 total)</h3>
-              <p className="mb-2">45-second professional video for your website and social media</p>
+              <div className="aspect-video mb-4">
+                <iframe
+                  width="100%"
+                  height="100%"
+                  src="https://www.youtube.com/embed/ejFbnmNCDow"
+                  title="Video Business Card Sample"
+                  frameBorder="0"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                  allowFullScreen
+                  className="w-full h-full rounded"
+                ></iframe>
+              </div>
+              <p className="mb-2">Help fund the thermal equipment that brings home lost pets in the North Okanagan and Shuswap</p>
             </div>
             
             <div className="bg-gray-50 p-6 rounded-lg">
               <h3 className="text-2xl font-bold text-[#0B2D59] mb-3">Brand Story Video - 2 payments of $399 ($798 total)</h3>
-              <p className="mb-2">2-minute comprehensive video that tells your story</p>
+              <div className="aspect-video mb-4">
+                <iframe
+                  width="100%"
+                  height="100%"
+                  src="https://www.youtube.com/embed/cg8mMjxSrss"
+                  title="Brand Message Video Sample"
+                  frameBorder="0"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                  allowFullScreen
+                  className="w-full h-full rounded"
+                ></iframe>
+              </div>
+              <p className="mb-2">Help fund the thermal equipment that brings home lost pets in the North Okanagan and Shuswap</p>
             </div>
             
             <p className="font-semibold">
@@ -294,6 +318,10 @@ export default function Home() {
             
             <p>
               First payment in December locks in your rate. Video production happens in January. Service launches February.
+            </p>
+            
+            <p>
+              These aren't stock templates—each video is custom-produced by Rhythm Productions to tell your unique story and showcase why your business champions community service.
             </p>
             
             <div className="text-center mt-10">
@@ -315,9 +343,7 @@ export default function Home() {
           <h2 className="text-4xl md:text-5xl text-[#0B2D59] mb-6 text-center">
             Video Examples
           </h2>
-          <p className="text-xl text-center mb-12 max-w-4xl mx-auto text-gray-700">
-            Professional video content produced by Rhythm Productions—real marketing assets you can use immediately.
-          </p>
+
 
           <div className="grid md:grid-cols-2 gap-8 mb-8">
             {/* Video Business Card Sample */}
@@ -369,11 +395,7 @@ export default function Home() {
             </div>
           </div>
 
-          <div className="text-center">
-            <p className="text-lg text-gray-700 max-w-3xl mx-auto">
-              These aren't stock templates—each video is custom-produced by Rhythm Productions to tell your unique story and showcase why your business champions community service.
-            </p>
-          </div>
+
         </div>
       </section>
 
@@ -386,6 +408,9 @@ export default function Home() {
 
           {/* Promotion Availability */}
           <div className="text-center mb-12 max-w-2xl mx-auto">
+            <p className="text-lg text-gray-700 mb-4">
+              Professional video content produced by Rhythm Productions—real marketing assets you can use immediately.
+            </p>
             <p className="text-lg text-gray-700 mb-2">
               Promotion only available for those who make their first payment in December 2025
             </p>
