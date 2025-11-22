@@ -347,3 +347,4 @@
 - [x] Update button text to include payment amounts
 - [x] Add "real marketing assets" text
 - [x] Reorganize promotional paragraphs
+- [x] Remove entire Video Package Details section
