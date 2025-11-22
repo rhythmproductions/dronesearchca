@@ -556,33 +556,6 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Section 12: Email Capture (Sponsors) */}
-      <section className="py-16 bg-gray-100">
-        <div className="container max-w-2xl text-center">
-          <h2 className="text-3xl text-[#0B2D59] mb-6">
-            Want Updates as We Launch?
-          </h2>
-          <p className="text-lg mb-8">
-            Join our email list to be notified when DroneSearch.ca goes live and learn how to access thermal pet search in your community.
-          </p>
-          <form name="community-launch-updates" method="POST" data-netlify="true" onSubmit={handleCommunityEmailSubmit} className="flex flex-col sm:flex-row gap-4">
-            <input type="hidden" name="form-name" value="community-launch-updates" />
-            <Input
-              type="email"
-              placeholder="Your email address"
-              name="email"
-              value={communityEmail}
-              onChange={(e) => setCommunityEmail(e.target.value)}
-              className="flex-1"
-              required
-            />
-            <Button type="submit" className="bg-[#FF6200] hover:bg-[#FF6200]/90">
-              Notify Me When We Launch
-            </Button>
-          </form>
-        </div>
-      </section>
-
       {/* Section 13: Final CTA */}
       <section className="py-20 bg-white" ref={decisionPointRef as any}>
         <div className="container max-w-4xl text-center">
@@ -591,11 +564,10 @@ export default function Home() {
           </h2>
           <div className="text-xl leading-relaxed space-y-6 mb-10 text-gray-800">
             <p>
-              You now understand why thermal search matters and how professional video content can help fund this service.
+              You've seen the technology works. You understand the model. Now it's just about whether professional video content makes sense for your business right now.
             </p>
-            <p className="font-semibold">There's only one question left:</p>
-            <p>
-              Will you get the professional marketing content your business needs while helping launch thermal pet rescue in the North Okanagan?
+            <p className="font-semibold">
+              If it does, lock in 50% off before this closes December 31st.
             </p>
           </div>
           <div className="flex justify-center">
@@ -685,9 +657,30 @@ export default function Home() {
             />
           </div>
 
+          {/* Email Capture */}
+          <div className="border-t border-gray-700 pt-8 pb-8">
+            <div className="max-w-2xl mx-auto text-center">
+              <p className="text-lg mb-4">Stay Updated: Join our email list for DroneSearch news and community updates</p>
+              <form name="community-launch-updates" method="POST" data-netlify="true" onSubmit={handleCommunityEmailSubmit} className="flex flex-col sm:flex-row gap-4 justify-center">
+                <input type="hidden" name="form-name" value="community-launch-updates" />
+                <Input
+                  type="email"
+                  placeholder="Your email address"
+                  name="email"
+                  value={communityEmail}
+                  onChange={(e) => setCommunityEmail(e.target.value)}
+                  className="flex-1 max-w-md bg-white text-gray-900"
+                  required
+                />
+                <Button type="submit" className="bg-[#FF6200] hover:bg-[#FF6200]/90">
+                  Subscribe
+                </Button>
+              </form>
+            </div>
+          </div>
+
           <div className="border-t border-gray-700 pt-8 text-center text-sm text-gray-400">
-            <p className="mb-2">© 2025 DroneSearch.ca | Privacy Policy | Terms of Service | <a href="/admin/login" className="text-gray-500 hover:text-gray-300 transition-colors">Admin</a></p>
-            <p>Monthly ongoing partnership opportunities available after launch—inquire for details.</p>
+            <p>© 2025 DroneSearch.ca | Privacy Policy | Terms of Service | <a href="/admin/login" className="text-gray-500 hover:text-gray-300 transition-colors">Admin</a></p>
           </div>
         </div>
       </footer>

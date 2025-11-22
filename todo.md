@@ -362,3 +362,6 @@
 - [x] Update "get marketing content they need" text
 - [x] Bold and update organization names text
 - [x] Add payment process explanation before January production timeline
+- [x] Move email capture form to footer with new copy
+- [x] Update "Your Decision Point" section with streamlined copy
+- [x] Remove "Monthly ongoing partnership opportunities" line from footer
