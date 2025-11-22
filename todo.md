@@ -353,3 +353,4 @@
 - [x] Remove entire Video Examples section
 - [x] Change Request More Information section to light grey background
 - [x] Change Funding Tracker section to white background
+- [x] Fix deployment packaging error
