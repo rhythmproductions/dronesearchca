@@ -844,8 +844,8 @@ export default function Home() {
           <p className="text-lg mb-8">
             Join our email list to be notified when DroneSearch.ca goes live and learn how to access thermal pet search in your community.
           </p>
-          <form name="service-launch-updates" method="POST" data-netlify="true" onSubmit={handleCommunityEmailSubmit} className="flex flex-col sm:flex-row gap-4">
-            <input type="hidden" name="form-name" value="service-launch-updates" />
+          <form name="community-launch-updates" method="POST" data-netlify="true" onSubmit={handleCommunityEmailSubmit} className="flex flex-col sm:flex-row gap-4">
+            <input type="hidden" name="form-name" value="community-launch-updates" />
             <Input
               type="email"
               placeholder="Your email address"
