@@ -341,3 +341,5 @@
 - [x] Move videos and help text into package boxes under titles
 - [x] Change "offering two" to "discounting two by half!"
 - [x] Reorganize custom production and professional content text blocks
+- [x] Update video box descriptions with professional copy
+- [x] Move "Secure Your Spot" buttons into video boxes

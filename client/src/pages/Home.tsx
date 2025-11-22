@@ -292,7 +292,15 @@ export default function Home() {
                   className="w-full h-full rounded"
                 ></iframe>
               </div>
-              <p className="mb-2">Help fund the thermal equipment that brings home lost pets in the North Okanagan and Shuswap</p>
+              <p className="mb-4">Perfect for your website homepage, social media, and email signatures. A professional introduction that sets you apart from competitors.</p>
+              <Button 
+                asChild
+                className="w-full bg-[#FF6200] hover:bg-[#E55800] text-white font-bold py-3"
+              >
+                <a href="https://buy.stripe.com/7sY3cwcTu1nma923Mq0sU04" target="_blank" rel="noopener noreferrer">
+                  Secure Your Spot →
+                </a>
+              </Button>
             </div>
             
             <div className="bg-gray-50 p-6 rounded-lg">
@@ -309,7 +317,15 @@ export default function Home() {
                   className="w-full h-full rounded"
                 ></iframe>
               </div>
-              <p className="mb-2">Help fund the thermal equipment that brings home lost pets in the North Okanagan and Shuswap</p>
+              <p className="mb-4">Comprehensive business storytelling that showcases your values, services, and community commitment. Premium content for your website and marketing campaigns.</p>
+              <Button 
+                asChild
+                className="w-full bg-[#FF6200] hover:bg-[#E55800] text-white font-bold py-3"
+              >
+                <a href="https://buy.stripe.com/9B628s9Hic20bd6dn00sU03" target="_blank" rel="noopener noreferrer">
+                  Secure Your Spot →
+                </a>
+              </Button>
             </div>
             
             <p className="font-semibold">
