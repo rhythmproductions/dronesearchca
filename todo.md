@@ -354,3 +354,4 @@
 - [x] Change Request More Information section to light grey background
 - [x] Change Funding Tracker section to white background
 - [x] Fix deployment packaging error
+- [x] Configure pnpm for deployment-compatible node_modules structure
