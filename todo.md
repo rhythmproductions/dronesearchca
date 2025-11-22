@@ -333,3 +333,5 @@
 - [x] Update thermometer text logic for funding milestones ($12K and $15K)
 - [x] Remove "Included with:" tier labels from video package sections
 - [x] Fix thermometer fill calculation bug when funding exceeds $12,000
+- [x] Fix thermometer display for amounts over $15,000
+- [x] Add green button feedback with "Amount Updated" text for 5 seconds

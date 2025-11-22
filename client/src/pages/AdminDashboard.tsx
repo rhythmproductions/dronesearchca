@@ -14,6 +14,7 @@ export default function AdminDashboard() {
   
   // Funding amount state
   const [fundingAmount, setFundingAmount] = useState(0);
+  const [isSaved, setIsSaved] = useState(false);
 
   useEffect(() => {
     // Check if user is authenticated
@@ -32,6 +33,12 @@ export default function AdminDashboard() {
   const handleSaveFundingAmount = () => {
     updateFundingAmount(fundingAmount);
     toast.success('Funding amount updated successfully!');
+    
+    // Show green success state for 5 seconds
+    setIsSaved(true);
+    setTimeout(() => {
+      setIsSaved(false);
+    }, 5000);
   };
 
   const handleLogout = () => {
@@ -154,10 +161,10 @@ export default function AdminDashboard() {
               <div className="mt-6">
                 <Button 
                   onClick={handleSaveFundingAmount}
-                  className="bg-[#FF6200] hover:bg-[#FF6200]/90"
+                  className={isSaved ? "bg-green-600 hover:bg-green-600" : "bg-[#FF6200] hover:bg-[#FF6200]/90"}
                 >
                   <Save className="mr-2 h-4 w-4" />
-                  Update Funding Amount
+                  {isSaved ? "Amount Updated" : "Update Funding Amount"}
                 </Button>
               </div>
             </div>

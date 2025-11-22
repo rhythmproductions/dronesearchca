@@ -87,7 +87,7 @@ export function FundingThermometer() {
                   className="bg-gradient-to-r from-yellow-400 to-yellow-500 transition-all duration-700 ease-out absolute top-0 bottom-0"
                   style={{ 
                     left: '80%',
-                    width: `${stretchFillPercentage * 0.2}%`
+                    width: `${Math.min(stretchFillPercentage, 100) * 0.2}%`
                   }}
                 />
               )}
