@@ -1,7 +1,7 @@
 [build]
-  base = "client"
-  command = "npm install --legacy-peer-deps && npm run build"
-  publish = "../dist/public"
+  base = "."
+  command = "pnpm install && pnpm run build"
+  publish = "dist/public"
 
 [[redirects]]
   from = "/*"
