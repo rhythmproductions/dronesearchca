@@ -283,6 +283,10 @@ export default function Home() {
             </p>
             
             <p>
+              Once you make your first payment through one of the links below, I will reach out and we will start the process! The second and final payment is made once your video is done, before it's delivered.
+            </p>
+            
+            <p>
               Video production begins January 2026—fresh marketing content for the new year while competitors are still in holiday mode.
             </p>
             

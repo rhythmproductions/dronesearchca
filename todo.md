@@ -361,3 +361,4 @@
 - [x] Remove "Your video purchase bridges this gap."
 - [x] Update "get marketing content they need" text
 - [x] Bold and update organization names text
+- [x] Add payment process explanation before January production timeline
