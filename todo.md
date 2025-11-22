@@ -348,3 +348,6 @@
 - [x] Add "real marketing assets" text
 - [x] Reorganize promotional paragraphs
 - [x] Remove entire Video Package Details section
+- [x] Update regular rates to $800 and $1600
+- [x] Remove timeline sentence and See Full Package Details button
+- [x] Remove entire Video Examples section

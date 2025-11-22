@@ -292,7 +292,7 @@ export default function Home() {
             
             <div className="bg-gray-50 p-6 rounded-lg mt-8">
               <h3 className="text-2xl font-bold text-[#0B2D59] mb-2">Business Card Video - 2 payments of $199 ($398 total)</h3>
-              <p className="text-gray-600 mb-4">Regular rate: $750</p>
+              <p className="text-gray-600 mb-4">Regular rate: $800</p>
               <div className="aspect-video mb-4">
                 <iframe
                   width="100%"
@@ -318,7 +318,7 @@ export default function Home() {
             
             <div className="bg-gray-50 p-6 rounded-lg">
               <h3 className="text-2xl font-bold text-[#0B2D59] mb-2">Brand Story Video - 2 payments of $399 ($798 total)</h3>
-              <p className="text-gray-600 mb-4">Regular rate: $1,500</p>
+              <p className="text-gray-600 mb-4">Regular rate: $1,600</p>
               <div className="aspect-video mb-4">
                 <iframe
                   width="100%"
@@ -341,83 +341,7 @@ export default function Home() {
                 </a>
               </Button>
             </div>
-            
-            <p>
-              First payment in December locks in your rate. Video production happens in January. Service launches February.
-            </p>
-            
-            <div className="text-center mt-10">
-              <Button 
-                size="lg" 
-                className="bg-[#FF6200] hover:bg-[#FF6200]/90 text-white text-lg px-8 py-6"
-                onClick={() => scrollToSection("founding-opportunities")}
-              >
-                See Full Package Details
-              </Button>
-            </div>
           </div>
-        </div>
-      </section>
-
-      {/* Video Examples Section */}
-      <section className="py-20 bg-gray-50">
-        <div className="container max-w-6xl">
-          <h2 className="text-4xl md:text-5xl text-[#0B2D59] mb-6 text-center">
-            Video Examples
-          </h2>
-
-
-          <div className="grid md:grid-cols-2 gap-8 mb-8">
-            {/* Video Business Card Sample */}
-            <div className="bg-white rounded-lg shadow-lg overflow-hidden">
-              <div className="aspect-video">
-                <iframe
-                  width="100%"
-                  height="100%"
-                  src="https://www.youtube.com/embed/ejFbnmNCDow"
-                  title="Video Business Card Sample"
-                  frameBorder="0"
-                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                  allowFullScreen
-                  className="w-full h-full"
-                ></iframe>
-              </div>
-              <div className="p-6">
-                <h3 className="text-2xl font-bold text-[#0B2D59] mb-3">
-                  Video Business Card (45 seconds)
-                </h3>
-                <p className="text-gray-600">
-                  Perfect for your website homepage, social media, and email signatures. A professional introduction that sets you apart from competitors.
-                </p>
-              </div>
-            </div>
-
-            {/* Brand Message Video Sample */}
-            <div className="bg-white rounded-lg shadow-lg overflow-hidden">
-              <div className="aspect-video">
-                <iframe
-                  width="100%"
-                  height="100%"
-                  src="https://www.youtube.com/embed/cg8mMjxSrss"
-                  title="Brand Message Video Sample"
-                  frameBorder="0"
-                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                  allowFullScreen
-                  className="w-full h-full"
-                ></iframe>
-              </div>
-              <div className="p-6">
-                <h3 className="text-2xl font-bold text-[#0B2D59] mb-3">
-                  Brand Message Video (1.5 minutes)
-                </h3>
-                <p className="text-gray-600">
-                  Comprehensive business storytelling that showcases your values, services, and community commitment. Premium content for your website and marketing campaigns.
-                </p>
-              </div>
-            </div>
-          </div>
-
-
         </div>
       </section>
 
