@@ -338,9 +338,6 @@ export default function Home() {
                 <h3 className="text-2xl font-bold text-[#0B2D59] mb-3">
                   Video Business Card (45 seconds)
                 </h3>
-                <p className="text-gray-700 mb-2">
-                  <strong>Included with:</strong> Founding Partner tier
-                </p>
                 <p className="text-gray-600">
                   Perfect for your website homepage, social media, and email signatures. A professional introduction that sets you apart from competitors.
                 </p>
@@ -365,9 +362,6 @@ export default function Home() {
                 <h3 className="text-2xl font-bold text-[#0B2D59] mb-3">
                   Brand Message Video (1.5 minutes)
                 </h3>
-                <p className="text-gray-700 mb-2">
-                  <strong>Included with:</strong> Signature Founding Partner tier
-                </p>
                 <p className="text-gray-600">
                   Comprehensive business storytelling that showcases your values, services, and community commitment. Premium content for your website and marketing campaigns.
                 </p>

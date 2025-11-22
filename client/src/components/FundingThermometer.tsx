@@ -120,20 +120,34 @@ export function FundingThermometer() {
         </div>
 
         {/* Progress text */}
-        <div className="text-center">
-          <p className="text-lg font-semibold text-gray-700">
-            {currentAmount >= STRETCH_GOAL && (
-              <span className="text-[#FF6200]">🎉 Stretch goal reached! Thank you!</span>
-            )}
-            {currentAmount >= GOAL && currentAmount < STRETCH_GOAL && (
-              <span className="text-green-600">✓ Funding target met! Working toward stretch goal...</span>
-            )}
-            {currentAmount < GOAL && (
-              <span className="text-gray-600">
-                ${(GOAL - currentAmount).toLocaleString()} remaining to reach funding target
-              </span>
-            )}
-          </p>
+        <div className="text-center space-y-2">
+          {currentAmount < GOAL && (
+            <p className="text-lg font-semibold text-gray-600">
+              ${(GOAL - currentAmount).toLocaleString()} remaining to reach funding target
+            </p>
+          )}
+          
+          {currentAmount >= GOAL && currentAmount < STRETCH_GOAL && (
+            <>
+              <p className="text-lg font-semibold text-green-600">
+                ✓ Funding target met!
+              </p>
+              <p className="text-lg font-semibold text-[#FF6200]">
+                ${(STRETCH_GOAL - currentAmount).toLocaleString()} remaining to reach stretch goal
+              </p>
+            </>
+          )}
+          
+          {currentAmount >= STRETCH_GOAL && (
+            <>
+              <p className="text-lg font-semibold text-[#FF6200]">
+                ✓ Stretch Goal met!
+              </p>
+              <p className="text-lg font-semibold text-gray-600">
+                ${(currentAmount - STRETCH_GOAL).toLocaleString()} above stretch goal
+              </p>
+            </>
+          )}
         </div>
       </div>
     </div>

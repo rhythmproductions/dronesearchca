@@ -5,18 +5,12 @@ import { Label } from "@/components/ui/label";
 import { useEffect, useState } from "react";
 import { useLocation } from "wouter";
 import { BarChart3, Users, MousePointerClick, FileText, LogOut, ArrowLeft, Save } from "lucide-react";
-import { getSponsorshipCounts, updateSponsorshipCounts } from "@/components/SponsorshipStatus";
 import { getFundingAmount, updateFundingAmount } from "@/components/FundingThermometer";
 import { toast } from "sonner";
 
 export default function AdminDashboard() {
   const [, setLocation] = useLocation();
   const [isAuthenticated, setIsAuthenticated] = useState(false);
-  
-  // Sponsorship counts state
-  const [titleFilled, setTitleFilled] = useState(0);
-  const [signatureFilled, setSignatureFilled] = useState(0);
-  const [partnerFilled, setPartnerFilled] = useState(0);
   
   // Funding amount state
   const [fundingAmount, setFundingAmount] = useState(0);
@@ -29,26 +23,11 @@ export default function AdminDashboard() {
     } else {
       setIsAuthenticated(true);
       
-      // Load current sponsorship counts
-      const counts = getSponsorshipCounts();
-      setTitleFilled(counts.title.filled);
-      setSignatureFilled(counts.signature.filled);
-      setPartnerFilled(counts.partner.filled);
-      
       // Load current funding amount
       const currentFunding = getFundingAmount();
       setFundingAmount(currentFunding);
     }
   }, [setLocation]);
-  
-  const handleSaveSponsorshipCounts = () => {
-    updateSponsorshipCounts({
-      title: { filled: titleFilled, total: 1 },
-      signature: { filled: signatureFilled, total: 8 },
-      partner: { filled: partnerFilled, total: 12 },
-    });
-    toast.success('Sponsorship counts updated successfully!');
-  };
   
   const handleSaveFundingAmount = () => {
     updateFundingAmount(fundingAmount);
@@ -138,86 +117,6 @@ export default function AdminDashboard() {
       </div>
 
       <div className="container max-w-7xl py-8">
-        {/* Sponsorship Management */}
-        <Card className="mb-8 border-orange-200 bg-orange-50">
-          <CardHeader>
-            <CardTitle className="text-orange-900">Manage Sponsorship Availability</CardTitle>
-            <CardDescription className="text-orange-800">
-              Update how many spots have been filled for each tier. Changes appear immediately on the homepage.
-            </CardDescription>
-          </CardHeader>
-          <CardContent>
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-              {/* Title Sponsor */}
-              <div>
-                <Label htmlFor="title-filled" className="text-sm font-semibold text-orange-900">
-                  Title Sponsor (1 total)
-                </Label>
-                <div className="flex items-center gap-3 mt-2">
-                  <Input
-                    id="title-filled"
-                    type="number"
-                    min="0"
-                    max="1"
-                    value={titleFilled}
-                    onChange={(e) => setTitleFilled(Math.min(1, Math.max(0, parseInt(e.target.value) || 0)))}
-                    className="w-20"
-                  />
-                  <span className="text-sm text-gray-600">filled</span>
-                </div>
-              </div>
-
-              {/* Signature Founding Partner */}
-              <div>
-                <Label htmlFor="signature-filled" className="text-sm font-semibold text-orange-900">
-                  Signature Founding Partner (8 total)
-                </Label>
-                <div className="flex items-center gap-3 mt-2">
-                  <Input
-                    id="signature-filled"
-                    type="number"
-                    min="0"
-                    max="8"
-                    value={signatureFilled}
-                    onChange={(e) => setSignatureFilled(Math.min(8, Math.max(0, parseInt(e.target.value) || 0)))}
-                    className="w-20"
-                  />
-                  <span className="text-sm text-gray-600">filled</span>
-                </div>
-              </div>
-
-              {/* Founding Partner */}
-              <div>
-                <Label htmlFor="partner-filled" className="text-sm font-semibold text-orange-900">
-                  Founding Partner (12 total)
-                </Label>
-                <div className="flex items-center gap-3 mt-2">
-                  <Input
-                    id="partner-filled"
-                    type="number"
-                    min="0"
-                    max="12"
-                    value={partnerFilled}
-                    onChange={(e) => setPartnerFilled(Math.min(12, Math.max(0, parseInt(e.target.value) || 0)))}
-                    className="w-20"
-                  />
-                  <span className="text-sm text-gray-600">filled</span>
-                </div>
-              </div>
-            </div>
-
-            <div className="mt-6">
-              <Button 
-                onClick={handleSaveSponsorshipCounts}
-                className="bg-[#FF6200] hover:bg-[#FF6200]/90"
-              >
-                <Save className="mr-2 h-4 w-4" />
-                Save Changes
-              </Button>
-            </div>
-          </CardContent>
-        </Card>
-
         {/* Funding Tracker Management */}
         <Card className="mb-8 border-green-200 bg-green-50">
           <CardHeader>
