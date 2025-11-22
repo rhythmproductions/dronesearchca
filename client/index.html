@@ -6,63 +6,26 @@
     <meta
       name="viewport"
       content="width=device-width, initial-scale=1.0, maximum-scale=1" />
-    <link rel="icon" type="image/png" href="%VITE_APP_LOGO%" />
-    <link rel="apple-touch-icon" href="%VITE_APP_LOGO%" />
-    <title>DroneSearch.ca - Thermal Drone Pet Search Service | North Okanagan Founding Sponsors</title>
-    <meta name="description" content="Help launch North Okanagan's first thermal drone pet search service. Founding sponsorship opportunities available in Vernon, Armstrong, and Salmon Arm. Be part of bringing this life-saving technology to BC." />
-    <meta name="keywords" content="drone pet search, North Okanagan, Vernon, Armstrong, Salmon Arm, founding sponsor, thermal imaging, BC pet rescue, business sponsorship" />
-    <link rel="canonical" href="https://dronesearch.ca" />
+    <link rel="icon" type="image/png" href="/favicon.png" />
+    <link rel="apple-touch-icon" href="/favicon.png" />
+    <title>DroneSearch.ca - Non-Emergency Thermal Drone Services</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@900&family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet" />
+    
+    <!-- Google Analytics 4 -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-1MZKEM0WTP"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-1MZKEM0WTP');
+    </script>
   </head>
 
   <body>
     <div id="root"></div>
     <script type="module" src="/src/main.tsx"></script>
-    <script
-      defer
-      src="%VITE_ANALYTICS_ENDPOINT%/umami"
-      data-website-id="%VITE_ANALYTICS_WEBSITE_ID%"></script>
-    <script type="application/ld+json">
-    {
-      "@context": "https://schema.org",
-      "@type": "LocalBusiness",
-      "name": "DroneSearch.ca",
-      "description": "Thermal drone pet search service launching in North Okanagan BC",
-      "url": "https://dronesearch.ca",
-      "email": "info@dronesearch.ca",
-      "priceRange": "$$",
-      "address": {
-        "@type": "PostalAddress",
-        "addressLocality": "Armstrong",
-        "addressRegion": "BC",
-        "addressCountry": "CA"
-      },
-      "areaServed": [
-        {
-          "@type": "City",
-          "name": "Vernon"
-        },
-        {
-          "@type": "City",
-          "name": "Armstrong"
-        },
-        {
-          "@type": "City",
-          "name": "Salmon Arm"
-        },
-        {
-          "@type": "City",
-          "name": "Enderby"
-        },
-        {
-          "@type": "Region",
-          "name": "North Okanagan"
-        }
-      ]
-    }
-    </script>
   </body>
 
 </html>
