@@ -328,3 +328,4 @@
 - [ ] Remove "Meet Your Pilot" section
 - [ ] Update CTA button text to "See Video Packages"
 - [ ] Update final question about North Okanagan story
+- [x] Replace funding tracker box with horizontal thermometer-style tracker ($0-$15K with $12K marker, green/gold color zones)

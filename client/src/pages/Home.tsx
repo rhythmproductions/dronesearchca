@@ -6,7 +6,7 @@ import { Check, Facebook, Instagram, Twitter, Youtube, Linkedin } from "lucide-r
 import { useState, FormEvent } from "react";
 import { toast } from "sonner";
 import { MapView } from "@/components/Map";
-import { SponsorshipStatus } from "@/components/SponsorshipStatus";
+import { FundingThermometer } from "@/components/FundingThermometer";
 import { trackClick, trackFormInteraction } from "@/lib/analytics";
 import { usePageView, useScrollTracking, useTimeTracking, useSectionTracking } from "@/hooks/useAnalytics";
 
@@ -701,7 +701,7 @@ export default function Home() {
             </p>
             
             <div className="my-8">
-              <SponsorshipStatus />
+              <FundingThermometer />
             </div>
             
             <div className="space-y-2">

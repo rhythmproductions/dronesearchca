@@ -6,6 +6,7 @@ import { useEffect, useState } from "react";
 import { useLocation } from "wouter";
 import { BarChart3, Users, MousePointerClick, FileText, LogOut, ArrowLeft, Save } from "lucide-react";
 import { getSponsorshipCounts, updateSponsorshipCounts } from "@/components/SponsorshipStatus";
+import { getFundingAmount, updateFundingAmount } from "@/components/FundingThermometer";
 import { toast } from "sonner";
 
 export default function AdminDashboard() {
@@ -16,6 +17,9 @@ export default function AdminDashboard() {
   const [titleFilled, setTitleFilled] = useState(0);
   const [signatureFilled, setSignatureFilled] = useState(0);
   const [partnerFilled, setPartnerFilled] = useState(0);
+  
+  // Funding amount state
+  const [fundingAmount, setFundingAmount] = useState(0);
 
   useEffect(() => {
     // Check if user is authenticated
@@ -30,6 +34,10 @@ export default function AdminDashboard() {
       setTitleFilled(counts.title.filled);
       setSignatureFilled(counts.signature.filled);
       setPartnerFilled(counts.partner.filled);
+      
+      // Load current funding amount
+      const currentFunding = getFundingAmount();
+      setFundingAmount(currentFunding);
     }
   }, [setLocation]);
   
@@ -40,6 +48,11 @@ export default function AdminDashboard() {
       partner: { filled: partnerFilled, total: 12 },
     });
     toast.success('Sponsorship counts updated successfully!');
+  };
+  
+  const handleSaveFundingAmount = () => {
+    updateFundingAmount(fundingAmount);
+    toast.success('Funding amount updated successfully!');
   };
 
   const handleLogout = () => {
@@ -201,6 +214,53 @@ export default function AdminDashboard() {
                 <Save className="mr-2 h-4 w-4" />
                 Save Changes
               </Button>
+            </div>
+          </CardContent>
+        </Card>
+
+        {/* Funding Tracker Management */}
+        <Card className="mb-8 border-green-200 bg-green-50">
+          <CardHeader>
+            <CardTitle className="text-green-900">Manage Funding Tracker</CardTitle>
+            <CardDescription className="text-green-800">
+              Update the current funding amount. The thermometer will show progress toward $12,000 goal and $15,000 stretch goal.
+            </CardDescription>
+          </CardHeader>
+          <CardContent>
+            <div className="space-y-4">
+              <div>
+                <Label htmlFor="funding-amount" className="text-sm font-semibold text-green-900">
+                  Current Funding Amount
+                </Label>
+                <div className="flex items-center gap-3 mt-2">
+                  <span className="text-lg font-bold text-gray-700">$</span>
+                  <Input
+                    id="funding-amount"
+                    type="number"
+                    min="0"
+                    max="15000"
+                    step="100"
+                    value={fundingAmount}
+                    onChange={(e) => setFundingAmount(Math.min(15000, Math.max(0, parseInt(e.target.value) || 0)))}
+                    className="w-32"
+                  />
+                  <span className="text-sm text-gray-600">of $15,000 stretch goal</span>
+                </div>
+                <div className="mt-2 text-sm text-gray-600">
+                  <div>Goal: $12,000 - Purchase thermal equipment</div>
+                  <div>Stretch Goal: $15,000 - Add backup battery system and extended warranty</div>
+                </div>
+              </div>
+
+              <div className="mt-6">
+                <Button 
+                  onClick={handleSaveFundingAmount}
+                  className="bg-[#FF6200] hover:bg-[#FF6200]/90"
+                >
+                  <Save className="mr-2 h-4 w-4" />
+                  Update Funding Amount
+                </Button>
+              </div>
             </div>
           </CardContent>
         </Card>
