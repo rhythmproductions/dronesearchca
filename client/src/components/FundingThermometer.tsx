@@ -75,19 +75,19 @@ export function FundingThermometer() {
             </div>
 
             {/* Filled sections */}
-            <div className="absolute inset-0 flex">
+            <div className="absolute inset-0">
               {/* $0-$12K filled - bright green */}
               <div 
-                className="bg-gradient-to-r from-green-500 to-green-600 transition-all duration-700 ease-out"
-                style={{ width: `${(goalFillPercentage * 0.8)}%` }}
+                className="bg-gradient-to-r from-green-500 to-green-600 transition-all duration-700 ease-out absolute left-0 top-0 bottom-0"
+                style={{ width: `${Math.min(goalFillPercentage, 100) * 0.8}%` }}
               />
               {/* $12K-$15K filled - vibrant gold */}
               {stretchFillPercentage > 0 && (
                 <div 
-                  className="bg-gradient-to-r from-yellow-400 to-yellow-500 transition-all duration-700 ease-out"
+                  className="bg-gradient-to-r from-yellow-400 to-yellow-500 transition-all duration-700 ease-out absolute top-0 bottom-0"
                   style={{ 
-                    width: `${(stretchFillPercentage * 0.2)}%`,
-                    marginLeft: '80%'
+                    left: '80%',
+                    width: `${stretchFillPercentage * 0.2}%`
                   }}
                 />
               )}

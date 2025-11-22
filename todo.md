@@ -332,3 +332,4 @@
 - [x] Remove "Manage Sponsorship Availability" section from admin panel
 - [x] Update thermometer text logic for funding milestones ($12K and $15K)
 - [x] Remove "Included with:" tier labels from video package sections
+- [x] Fix thermometer fill calculation bug when funding exceeds $12,000
