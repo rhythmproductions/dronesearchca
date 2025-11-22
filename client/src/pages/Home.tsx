@@ -346,7 +346,7 @@ export default function Home() {
       </section>
 
       {/* Section 5: Founding Sponsor Opportunities */}
-      <section id="founding-opportunities" className="py-20 bg-white" ref={foundingOpportunitiesRef as any}>
+      <section id="founding-opportunities" className="py-20 bg-gray-50" ref={foundingOpportunitiesRef as any}>
         <div className="container max-w-6xl">
 
           {/* Founding Partner Form - Moved here */}
@@ -525,7 +525,7 @@ export default function Home() {
       )}
 
       {/* Section 10: Funding Tracker */}
-      <section className="py-20 bg-gray-50" ref={foundingStatusRef as any}>
+      <section className="py-20 bg-white" ref={foundingStatusRef as any}>
         <div className="container max-w-4xl">
           <h2 className="text-4xl text-[#0B2D59] mb-10 text-center">
             Funding Tracker

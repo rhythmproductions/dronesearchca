@@ -351,3 +351,5 @@
 - [x] Update regular rates to $800 and $1600
 - [x] Remove timeline sentence and See Full Package Details button
 - [x] Remove entire Video Examples section
+- [x] Change Request More Information section to light grey background
+- [x] Change Funding Tracker section to white background
