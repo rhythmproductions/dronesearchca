@@ -275,11 +275,24 @@ export default function Home() {
             </p>
             
             <p className="font-semibold mt-8">
-              Through December, I'm discounting two video packages by half!
+              Through December, I'm discounting two video packages by half! Real marketing assets you can use immediately.
             </p>
             
-            <div className="bg-gray-50 p-6 rounded-lg">
-              <h3 className="text-2xl font-bold text-[#0B2D59] mb-3">Business Card Video - 2 payments of $199 ($398 total)</h3>
+            <p>
+              These aren't stock templates—each video is custom-produced by Rhythm Productions to tell your unique story and showcase why your business champions community service.
+            </p>
+            
+            <p className="font-semibold">
+              Promotion only available for those who make their first payment in December 2025
+            </p>
+            
+            <p>
+              Video production begins January 2026—fresh marketing content for the new year while competitors are still in holiday mode.
+            </p>
+            
+            <div className="bg-gray-50 p-6 rounded-lg mt-8">
+              <h3 className="text-2xl font-bold text-[#0B2D59] mb-2">Business Card Video - 2 payments of $199 ($398 total)</h3>
+              <p className="text-gray-600 mb-4">Regular rate: $750</p>
               <div className="aspect-video mb-4">
                 <iframe
                   width="100%"
@@ -298,13 +311,14 @@ export default function Home() {
                 className="w-full bg-[#FF6200] hover:bg-[#E55800] text-white font-bold py-3"
               >
                 <a href="https://buy.stripe.com/7sY3cwcTu1nma923Mq0sU04" target="_blank" rel="noopener noreferrer">
-                  Secure Your Spot →
+                  Make first $199 payment to secure this deal
                 </a>
               </Button>
             </div>
             
             <div className="bg-gray-50 p-6 rounded-lg">
-              <h3 className="text-2xl font-bold text-[#0B2D59] mb-3">Brand Story Video - 2 payments of $399 ($798 total)</h3>
+              <h3 className="text-2xl font-bold text-[#0B2D59] mb-2">Brand Story Video - 2 payments of $399 ($798 total)</h3>
+              <p className="text-gray-600 mb-4">Regular rate: $1,500</p>
               <div className="aspect-video mb-4">
                 <iframe
                   width="100%"
@@ -323,21 +337,13 @@ export default function Home() {
                 className="w-full bg-[#FF6200] hover:bg-[#E55800] text-white font-bold py-3"
               >
                 <a href="https://buy.stripe.com/9B628s9Hic20bd6dn00sU03" target="_blank" rel="noopener noreferrer">
-                  Secure Your Spot →
+                  Make first $399 payment to secure this deal
                 </a>
               </Button>
             </div>
             
-            <p className="font-semibold">
-              Normal rates: $750/ $1,500. Your rate: Half that.
-            </p>
-            
             <p>
               First payment in December locks in your rate. Video production happens in January. Service launches February.
-            </p>
-            
-            <p>
-              These aren't stock templates—each video is custom-produced by Rhythm Productions to tell your unique story and showcase why your business champions community service.
             </p>
             
             <div className="text-center mt-10">

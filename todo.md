@@ -343,3 +343,7 @@
 - [x] Reorganize custom production and professional content text blocks
 - [x] Update video box descriptions with professional copy
 - [x] Move "Secure Your Spot" buttons into video boxes
+- [x] Add regular rates above videos in both boxes
+- [x] Update button text to include payment amounts
+- [x] Add "real marketing assets" text
+- [x] Reorganize promotional paragraphs
