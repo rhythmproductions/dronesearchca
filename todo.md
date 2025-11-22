@@ -291,3 +291,40 @@
 ## Pricing Update (Dec 2025)
 - [x] Update brand video value from $2,000 to $1,500 in Signature Founding Partner tier
 - [x] Update all other $2,000 references to $1,500
+
+## Pivot to Video Promotion Funding Model (Dec 2025)
+- [x] Update hero headline to "Get Professional Videos at 50% Off"
+- [x] Update hero subheadline to "Fund the thermal equipment that brings lost pets home"
+- [x] Change hero CTA to "See Video Packages"
+- [x] Update Section 2 headline to "Why Thermal Works"
+- [x] Add 5 acres vs 100+ acres visual to Section 2
+- [x] Delete entire "Picture This Moment" section (Section 3)
+- [x] Add funding paragraph to community support section
+
+## Add How This Works Section (Dec 2025)
+- [x] Add "Here's How This Works" section above video samples
+- [x] Include Mike's introduction and Rhythm Productions background
+- [x] Add two video package descriptions with pricing
+- [x] Add CTA button "See Full Package Details"
+- [x] Change "See What Sponsors Receive" to "Video Examples"
+
+## Video Promotion Model Refinements (Dec 2025)
+- [ ] Remove thermal equipment cost paragraph from How This Works
+- [ ] Update normal rates to "$750/ $1,500"
+- [ ] Change "founding partnership" to "video purchase" (2 instances)
+- [ ] Move "Here's the reality:" before equipment cost
+- [ ] Change "Founding Sponsor Opportunities" to "Video Package Details"
+- [ ] Remove founding sponsorship intro paragraphs
+- [ ] Change deadline heading to promotion availability text
+- [ ] Remove December 15th deadline text
+- [ ] Remove entire Title Sponsor tier
+- [ ] Remove "8 SPOTS AVAILABLE" badge from Signature tier
+- [ ] Change "1.5-minute brand video" to "1.5-minute Brand Video"
+- [ ] Remove "12 SPOTS AVAILABLE" badge from Founding Partner tier
+- [ ] Change "45-second video business card" to "45-second Video Business Card"
+- [ ] Remove entire FAQ section
+- [ ] Replace Founding Partner Status with Funding Tracker ($12K goal, $15K stretch)
+- [ ] Add funding tracker to admin dashboard
+- [ ] Remove "Meet Your Pilot" section
+- [ ] Update CTA button text to "See Video Packages"
+- [ ] Update final question about North Okanagan story
