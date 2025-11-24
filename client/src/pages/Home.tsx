@@ -574,7 +574,7 @@ export default function Home() {
             <Button 
               size="lg" 
               className="bg-[#0B2D59] hover:bg-[#0B2D59]/90 text-white text-lg px-10 py-6"
-              onClick={() => scrollToSection("founding-opportunities")}
+              onClick={() => scrollToSection("video-packages")}
             >
               See Video Packages →
             </Button>

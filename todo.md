@@ -365,3 +365,6 @@
 - [x] Move email capture form to footer with new copy
 - [x] Update "Your Decision Point" section with streamlined copy
 - [x] Remove "Monthly ongoing partnership opportunities" line from footer
+- [x] Fix "See Video Packages" button to scroll to "Here's How This Works" section
+- [ ] Fix map not displaying on website
+- [ ] Investigate Google Analytics dashboard not showing data
