@@ -291,7 +291,7 @@ export default function Home() {
             </p>
             
             <div className="bg-gray-50 p-6 rounded-lg mt-8">
-              <h3 className="text-2xl font-bold text-[#0B2D59] mb-2">Business Card Video - 2 payments of $199 ($398 total)</h3>
+              <h3 className="text-2xl font-bold text-[#FF6200] mb-2">Business Card Video - 2 payments of $199 ($398 total)</h3>
               <p className="text-gray-600 mb-4">Regular rate: $800</p>
               <div className="aspect-video mb-4">
                 <iframe
@@ -331,7 +331,7 @@ export default function Home() {
             </div>
             
             <div className="bg-gray-50 p-6 rounded-lg">
-              <h3 className="text-2xl font-bold text-[#0B2D59] mb-2">Brand Story Video - 2 payments of $399 ($798 total)</h3>
+              <h3 className="text-2xl font-bold text-[#FF6200] mb-2">Brand Story Video - 2 payments of $399 ($798 total)</h3>
               <p className="text-gray-600 mb-4">Regular rate: $1,600</p>
               <div className="aspect-video mb-4">
                 <iframe
